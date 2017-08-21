@@ -480,10 +480,10 @@ cursor:default;
 
 
 .menu {
-  right: -300px;  /* start off behind the scenes */
+  right: -280px;
   height: 100%;
   position: fixed;
-  width: 300px;
+  width: 280px;
 z-index: 5;
 background:rgba(255,255,255,0.95);
 }
