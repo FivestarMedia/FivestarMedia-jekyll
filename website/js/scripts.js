@@ -59,7 +59,7 @@ $('.icon-menu').on('click',function()
 $(this).attr('data-click-state', 0);
 $('body').css("max-width", "1600px");
 $('body').css("overflow","visible");
-$('.menu').animate({right: "-250px"}, 400); 
+$('.menu').animate({right: "-280px"}, 400); 
 
 $('nav').animate({right: "0px"}, 400);
 
@@ -93,8 +93,8 @@ $('nav').animate({right: "0px"}, 400);
 			$('.footerBanner').animate({opacity: '0.35'}, 200);			
 
 		setTimeout(function(){ 		
-			$('nav ul').animate({right: "250px"}, 400);
-			$('nav').animate({right: "250px"}, 400);
+			$('nav ul').animate({right: "280px"}, 400);
+			$('nav').animate({right: "280px"}, 400);
 			$(".burger").toggleClass('open');	
 			$('.menu').animate({right: "0px"}, 400); 
 			$('body').css("overflow","hidden");
@@ -112,7 +112,7 @@ $('.icon-menuBottom').on('click',function()
 
 			$('body').css("max-width", "1600px");
 			$('body').css("overflow","visible");
-			$('.menu').animate({right: "-250px"}, 400); 
+			$('.menu').animate({right: "-280px"}, 400); 
 			
 			$('.newNav').animate({right: "0px"}, 400);
 			
@@ -156,7 +156,7 @@ $('.footerBanner').animate({opacity: '0.35'}, 200);
 setTimeout(function()
 { 		
 	$('body').css("overflow","hidden");
-	$('.newNav').animate({right: "250px"}, 400);
+	$('.newNav').animate({right: "280px"}, 400);
 $(".burger").toggleClass('open');
 $('.menu').animate({right: "0px"}, 400);
 
