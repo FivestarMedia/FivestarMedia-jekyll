@@ -6,7 +6,7 @@ body {
     margin:0;
     /* z-index: 10000; */
 	box-shadow: 1px 1px 10px grey;
-    min-width:576px;
+    /* min-width:576px; */
     max-width:1600px;
     /* background-color:black; */
 }
