@@ -137,13 +137,13 @@ $(document).ready(function(){
         			{
             			$('.newNav').addClass("slideNewNavDown");
             			$('nav').css("display","none");
-            			$('a i').css("display","inline");
+            			// $('a i').css("display","inline");
         			} 
         			else
         			{
             			$('.newNav').removeClass("slideNewNavDown");;
             			$('nav').css("display","inline");
-            			$('a i').css("display","none");
+            			// $('a i').css("display","none");
         			};
 				
 					$(window).scroll(function ()
@@ -153,13 +153,13 @@ $(document).ready(function(){
 						{
 							$('.newNav').addClass("slideNewNavDown");
 							$('nav').css("display","none");
-							$('a i').css("display","inline");
+							// $('a i').css("display","inline");
 						} 
 						else
 						{
 							$('.newNav').removeClass("slideNewNavDown");;
 							$('nav').css("display","inline");
-							$('a i').css("display","none");
+							// $('a i').css("display","none");
 						}
 					});
 					
