@@ -161,8 +161,10 @@ nav ul {
 nav ul li a {
 	color:white;
 	text-decoration: none;
-	padding-bottom:5px;
-	padding-top:20px;
+	/* padding-bottom:5px;
+	padding-top:20px; */
+	padding-bottom:6px;
+	padding-top:5px;
 }
 
 nav ul li a:hover {
