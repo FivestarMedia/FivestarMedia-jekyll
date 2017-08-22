@@ -5,7 +5,7 @@ body {
     right:0;
     margin:0;
     /* z-index: 10000; */
-	box-shadow: 1px 1px 10px grey;
+
     /* min-width:576px; */
     max-width:1600px;
     /* background-color:black; */
@@ -145,7 +145,7 @@ nav {
 
 
 nav ul {
-	position:fixed; 
+	position:absolute; 
 	top:0;
 	right:0;
 	display:inline-block;
@@ -487,6 +487,7 @@ cursor:default;
   width: 270px;
 z-index: 5;
 background:rgba(255,255,255,0.95);
+/* box-shadow: 1px 1px 10px grey; */
 }
 
 

@@ -13,7 +13,7 @@ function main() {
 	
 	$('nav').animate({right: "0px"}, 400);
 	
-				$('nav ul').animate({right: "0px"}, 400);
+				// $('nav ul').animate({right: "0px"}, 400);
 				setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
 	
 				setTimeout(function(){ 		
@@ -43,7 +43,7 @@ function main() {
 				$('.footerBanner').animate({opacity: '0.35'}, 200);			
 	
 			setTimeout(function(){ 		
-				$('nav ul').animate({right: "270px"}, 400);
+				// $('nav ul').animate({right: "270px"}, 400);
 				$('nav').animate({right: "270px"}, 400);
 				$(".burger").toggleClass('open');	
 				$('.menu').animate({right: "0px"}, 400); 
