@@ -12,10 +12,10 @@ function main() {
 	$('.menu').animate({right: "-270px"}, 400); 
 	
 	$('nav').animate({right: "0px"}, 400);
-	
+	let thisObject = this;
 				// $('nav ul').animate({right: "0px"}, 400);
-				setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
-	
+				// setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
+				// setTimeout({myFunction(this)}, 1200);	
 				setTimeout(function(){ 		
 	
 					$('.footerBanner').animate({opacity: '1'}, 200);			
@@ -25,14 +25,14 @@ function main() {
 					$('.container-fluid').animate({opacity: '1'}, 200);			
 					$('.banner').animate({opacity: '1'}, 200);			
 					$('.jumbotron').animate({opacity: '1'}, 200);			
-	
-				}, 1200);
+					myFunction(thisObject);
+				}, 800);
 	}
 		else
 			{
 				let bgWidth = $(window).width();
 				$('body').css("max-width", bgWidth);
-		
+				myFunction(this);
 				$(this).attr('data-click-state', 1);
 				$('.jumbotron').animate({opacity: '0.35'}, 200);			
 				$('.banner').animate({opacity: '0.35'}, 200);			
@@ -45,7 +45,7 @@ function main() {
 			setTimeout(function(){ 		
 				// $('nav ul').animate({right: "270px"}, 400);
 				$('nav').animate({right: "270px"}, 400);
-				$(".burger").toggleClass('open');	
+				// $(".burger").toggleClass('open');	
 				$('.menu').animate({right: "0px"}, 400); 
 				$('body').css("overflow","hidden");
 			}, 400);
@@ -55,17 +55,18 @@ function main() {
 	$('.icon-menuBottom').on('click',function()
 	{
 		$('body').css("background", "black");
+
 		if($(this).attr('data-click-state') == 1)
 			{
 				$(this).attr('data-click-state', 0);
-	
 				$('body').css("max-width", "1600px");
 				$('body').css("overflow","visible");
 				$('.menu').animate({right: "-270px"}, 400); 
 				
 				$('.newNav').animate({right: "0px"}, 400);
-				
-							setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
+				let thisObject = this;
+
+							// setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
 				
 							setTimeout(function(){ 			
 				
@@ -77,21 +78,28 @@ function main() {
 								$('.banner').animate({opacity: '1'}, 200);			
 								$('.jumbotron').animate({opacity: '1'}, 200);			
 								$('.newNav').animate({backgroundColor: 'rgba(255,255,255,0.95)'}, 200);			
-								$('.icon-menuBottom').animate({color: '#000'},200);
+								// $('.burger').animate({color: '#000'},200);
 								$('.newNav').css("box-shadow","1px 1px 5px lightgrey");
 								$('.newNav img').attr("src","./images/fivestarlogo.svg");
-							}, 1200);
+								$('.bar1').css("background-color", "black");						
+								$('.bar2').css("background-color", "black");						
+								$('.bar3').css("background-color", "black");						
+								myFunction(thisObject);
+							}, 800);
 		}
 		else
 			{
+				$('.bar1').css("background-color", "white");						
+				$('.bar2').css("background-color", "white");						
+				$('.bar3').css("background-color", "white");												
+				myFunction(this);
 				let bgWidth = $(window).width();
 				$('body').css("max-width", bgWidth);
-	
 	
 	$(this).attr('data-click-state', 1);
 	$('.newNav').animate({backgroundColor: 'rgba(255,255,255,0)'}, 200);			
 	$('.newNav').css("box-shadow","none");
-	$('.icon-menuBottom').animate({color: '#fff'},200);
+	// $('.burger').animate({color: '#fff'},200);
 	$('.newNav img').attr("src","./images/fivestarlogobefore.svg");
 	
 	$('.jumbotron').animate({opacity: '0.35'}, 200);			
@@ -106,7 +114,7 @@ function main() {
 	{ 		
 		$('body').css("overflow","hidden");
 		$('.newNav').animate({right: "270px"}, 400);
-	$(".burger").toggleClass('open');
+	// $(".burger").toggleClass('open');
 	$('.menu').animate({right: "0px"}, 400);
 	
 	}, 400);
@@ -136,8 +144,11 @@ $(document).ready(function(){
 				    if ($(window).scrollTop() >= 300)
         			{
             			$('.newNav').addClass("slideNewNavDown");
-            			$('nav').css("display","none");
-            			// $('a i').css("display","inline");
+						$('nav').css("display","none");
+						$('.bar1').css("background-color", "black");						
+						$('.bar2').css("background-color", "black");						
+						$('.bar3').css("background-color", "black");												
+						// $('a i').css("display","inline");
         			} 
         			else
         			{
@@ -153,12 +164,18 @@ $(document).ready(function(){
 						{
 							$('.newNav').addClass("slideNewNavDown");
 							$('nav').css("display","none");
+							$('.bar1').css("background-color", "black");						
+							$('.bar2').css("background-color", "black");						
+							$('.bar3').css("background-color", "black");												
 							// $('a i').css("display","inline");
 						} 
 						else
 						{
 							$('.newNav').removeClass("slideNewNavDown");;
 							$('nav').css("display","inline");
+							$('.bar1').css("background-color", "white");						
+							$('.bar2').css("background-color", "white");						
+							$('.bar3').css("background-color", "white");						
 							// $('a i').css("display","none");
 						}
 					});
@@ -180,3 +197,7 @@ $(document).ready(function(){
 // });
 
 // $(document).ready(main);
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}

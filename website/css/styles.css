@@ -530,21 +530,23 @@ color:grey;
 }
 
 .icon-menu {
-  color: #fff;  
+  /* color: #fff;   */
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+ display:inline-block;
+  /* font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  text-decoration: none;
-  padding-top:19px;
+  text-decoration: none; */
+  padding-top:14px;
 }
 
 .icon-menuBottom {
-  color: #000;  
+    display:inline-block;
+  /* color: #000;   */
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  text-decoration: none;
- padding-top:7px; 
+  text-decoration: none; */
+ /* padding-top:2px;  */
 }
 
 @media all {
@@ -621,7 +623,7 @@ nav img {
 
 
 
-.burger {
+/* .burger {
   border: 0;
   background: none;
   outline: 0;
@@ -670,8 +672,46 @@ nav img {
   -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
   transition: transform 0.75s ease-in-out;
   -webkit-transition: -webkit-transform 0.75s ease-in-out;
+} */
+
+/* small {
+  font-size: 10px;
+} */
+
+
+.bar1, .bar2, .bar3 {
+    width: 28px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.2s;
 }
 
-small {
-  font-size: 10px;
+/* Rotate first bar */
+.change .bar1 {
+    /* -webkit-transform: rotate(-45deg) translate(-6px, 6px) ; */
+    transform: translate3d(8px, 4px, 0) rotate(45deg) scale(0.7, 1);
+
+    /* border-bottom: 4px solid transparent;
+    transition: border-bottom 1.2s ease-in-out;
+    -webkit-transition: border-bottom 1.2s ease-in-out; */
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+
+    transform: rotate(-180deg);
+    /* transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: transform 0.75s ease-in-out;
+    -webkit-transition: -webkit-transform 0.75s ease-in-out; */
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate3d(8px, -4px, 0) rotate(-45deg) scale(0.7, 1);
+    /* transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: transform 0.75s ease-in-out;
+    -webkit-transition: -webkit-transform 0.75s ease-in-out; */
 }
