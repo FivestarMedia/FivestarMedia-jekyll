@@ -12,7 +12,7 @@ function main() {
 	$('.menu').animate({right: "-270px"}, 400); 
 	
 	$('nav').animate({right: "0px"}, 400);
-	let thisObject = this;
+	var thisObject = this;
 				// $('nav ul').animate({right: "0px"}, 400);
 				// setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
 				// setTimeout({myFunction(this)}, 1200);	
@@ -30,7 +30,7 @@ function main() {
 	}
 		else
 			{
-				let bgWidth = $(window).width();
+				var bgWidth = $(window).width();
 				$('body').css("max-width", bgWidth);
 				myFunction(this);
 				$(this).attr('data-click-state', 1);
@@ -64,7 +64,7 @@ function main() {
 				$('.menu').animate({right: "-270px"}, 400); 
 				
 				$('.newNav').animate({right: "0px"}, 400);
-				let thisObject = this;
+				var thisObject = this;
 
 							// setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
 				
@@ -93,7 +93,7 @@ function main() {
 				$('.bar2').css("background-color", "white");						
 				$('.bar3').css("background-color", "white");												
 				myFunction(this);
-				let bgWidth = $(window).width();
+				var bgWidth = $(window).width();
 				$('body').css("max-width", bgWidth);
 	
 	$(this).attr('data-click-state', 1);
