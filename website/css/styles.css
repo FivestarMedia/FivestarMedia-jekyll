@@ -7,7 +7,7 @@ body {
     /* z-index: 10000; */
 
     /* min-width:576px; */
-    max-width:1600px;
+    /* max-width:1600px; */
     /* background-color:black; */
 }
 
@@ -146,14 +146,14 @@ nav {
 
 nav ul {
 	position:absolute; 
-	top:0;
+	/* top:0; */
 	right:0;
 	display:inline-block;
 	font-weight: lighter;
 	text-align: right;
 	/* margin-right:10px; */
-	list-style:none;
-	cursor:default;
+	/* list-style:none; */
+	/* cursor:default; */
     padding-top:18px;
     /* margin-left:100px; */
 }
@@ -163,8 +163,8 @@ nav ul li a {
 	text-decoration: none;
 	/* padding-bottom:5px;
 	padding-top:20px; */
-	padding-bottom:6px;
-	padding-top:5px;
+	padding-bottom:5px;
+	padding-top:20px;
 }
 
 nav ul li a:hover {
