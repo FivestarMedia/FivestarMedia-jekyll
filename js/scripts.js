@@ -1,3 +1,5 @@
+---
+---
 function main() {
 
 	$('.icon-menu').on('click', function () {
@@ -130,7 +132,7 @@ function main() {
 				}, 200);
 				// $('.burger').animate({color: '#000'},200);
 				$('.newNav').css("box-shadow", "1px 1px 5px lightgrey");
-				$('.newNav img').attr("src", "./images/fivestarlogo.svg");
+				$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogo.svg");
 				$('.bar1').css("background-color", "black");
 				$('.bar2').css("background-color", "black");
 				$('.bar3').css("background-color", "black");
@@ -150,7 +152,7 @@ function main() {
 			}, 200);
 			$('.newNav').css("box-shadow", "none");
 			// $('.burger').animate({color: '#fff'},200);
-			$('.newNav img').attr("src", "./images/fivestarlogobefore.svg");
+			$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogobefore.svg");
 
 			$('.jumbotron').animate({
 				opacity: '0.35'
