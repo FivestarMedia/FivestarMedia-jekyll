@@ -34,7 +34,7 @@ function main() {
 				$('#map').animate({
 					opacity: '1'
 				}, 200);
-				$('.container-fluid').animate({
+				$('.body-container').animate({
 					opacity: '1'
 				}, 200);
 				$('.banner').animate({
@@ -56,7 +56,7 @@ function main() {
 			$('.banner').animate({
 				opacity: '0.35'
 			}, 200);
-			$('.container-fluid').animate({
+			$('.body-container').animate({
 				opacity: '0.35'
 			}, 200);
 			$('#map').animate({
@@ -118,7 +118,7 @@ function main() {
 				$('#map').animate({
 					opacity: '1'
 				}, 200);
-				$('.container-fluid').animate({
+				$('.body-container').animate({
 					opacity: '1'
 				}, 200);
 				$('.banner').animate({
@@ -160,7 +160,7 @@ function main() {
 			$('.banner').animate({
 				opacity: '0.35'
 			}, 200);
-			$('.container-fluid').animate({
+			$('.body-container').animate({
 				opacity: '0.35'
 			}, 200);
 			$('#map').animate({
