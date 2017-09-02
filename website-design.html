@@ -8,7 +8,7 @@ permalink: /website-design/
 
 	{% include menu.html %}
 
-	<div class="jumbotron websiteDesignBackground"></div>
+	<div class="jumbotron website-design-background"></div>
 
 	<div class="banner">
 		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit esse vero facilis commodi molestiae cum odit placeat
@@ -83,102 +83,8 @@ permalink: /website-design/
 
 	</div>
 
-	<div id="map"></div>
+	{% include footer.html %}
 
-	<div class="moreHelp">
-		<h1 class="toUpper">Need help? Feel free to contact us at 416-464-6573</h1>
-	</div>
-
-	<div class="container-fluid">
-		<div class="row locations">
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footerText">
-				<p>Brampton Main Office</p>
-
-				<div class="blockImg">
-					<img src="{{ site.baseurl }}/images/brampton.jpg">
-				</div>
-
-				<p>2 County Court Blvd., Suite 400</p>
-				<p>Brampton, ON</p>
-				<p>L6W 3W8, Canada</p>
-
-			</div>
-
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footerText">
-				<p>Toronto - Yonge & Bloor</p>
-
-				<div class="blockImg">
-					<img src="{{ site.baseurl }}/images/toronto.jpg">
-				</div>
-
-				<p>2 Bloor West, Suite 700</p>
-				<p>Toronto, ON</p>
-				<p>M4W 3E2, Canada</p>
-			</div>
-
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footerText">
-				<p>Toronto - Yonge & Sheppard</p>
-
-				<div class="blockImg">
-					<img src="{{ site.baseurl }}/images/sheppard.jpg">
-				</div>
-
-				<p>4711 Yonge Street, 10th Floor</p>
-				<p>Toronto, ON</p>
-				<p>M2N 6K8, Canada</p>
-			</div>
-
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footerText">
-				<p>Mississauga Office</p>
-
-				<div class="blockImg">
-					<img src="{{ site.baseurl }}/images/mississauga.jpg">
-				</div>
-
-				<p>5925 Airport Road, Suite 200</p>
-				<p>Mississauga, ON</p>
-				<p>L4V 1W1, Canada</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="footerBanner">
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company1.jpg">
-		</div>
-
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company2.png">
-		</div>
-
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company6.jpg">
-		</div>
-
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company5.jpg">
-		</div>
-
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company3.png">
-		</div>
-
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company7.jpg">
-		</div>
-
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company8.jpg">
-		</div>
-
-		<div class="footerImage">
-			<img src="{{ site.baseurl }}/images/company9.jpg">
-		</div>
-	</div>
-
-	<script src="{{ site.baseurl }}/js/scripts.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyBADGObWqRT173c7GYHmDc0BpJ4zECy1_A&callback=initMap">
-	</script>
 </body>
 
 </html>
