@@ -116,6 +116,20 @@ body {
     padding: 4.5vw 2vw;
 }
 
+.bannerBottom {
+    
+      /* background: #0F52BA; */
+        // padding:40px 100px;
+    
+    
+        /* position:absolute;
+        bottom:0; */
+        background: #4286f4;
+        text-align: center;
+        color:white;
+        padding: 4.5vw 2vw;
+    }
+
 h1 {
     font-size:7.5vw;
     margin:5vw;
@@ -170,6 +184,10 @@ h3 {
     color: #656666;
 }
 
+.serviceCols:last-child {
+    padding-bottom:9vw;
+}
+
 .serviceCols a {
     color: #656666;
     // display:block;
@@ -191,12 +209,12 @@ h3 {
     // background-color: red;
 }
 
-.serviceIcon img {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    // width: 100vw;
-}
+// .serviceIcon img {
+//     display: block;
+//     margin: 0 auto;
+//     height: auto;
+//     // width: 100vw;
+// }
 
 
 
@@ -220,28 +238,38 @@ h3 {
 
 .toUpper {
     text-transform: uppercase;
-    font-weight:bold;
+    // font-weight:bold;
     // padding-bottom:0.5vw;
 
 }
 
-.serviceText .bolder {
+.bold {
+    font-weight:bold;
+    // margin:0;
+}
+
+.serviceText  {
     // padding-top:8px;
-    font-weight: bold;
     color: #656666;
-    text-decoration: underline;
+    text-decoration: none;
     margin-bottom:0;
 }
 .serviceCols a:hover {
     text-decoration: none;
 }
 
-.bolder:hover {
+.serviceText:hover {
     text-decoration:none;
 }
 
+.serviceLink {
+    text-decoration: underline;
+    margin:0;
+}
 
-
+.serviceLink:hover {
+    text-decoration: none;
+}
 
 #map {
 	width:100%;
@@ -770,6 +798,10 @@ color:grey;
     padding: 3.075vw 0vw;
 }
 
+.serviceCols:last-child {
+    padding-bottom:6.15vw;
+}
+
 .serviceText {
     width:21.025vw;
     padding-left:1.5vw;
@@ -781,7 +813,12 @@ color:grey;
 
 h1 {
     font-size:3.75vw;
+    margin:2.5vw;
+}
+
+.bannerBottom h1 {
     margin:0;
+    font-size:2.5vw;
 }
 
 h2 {
