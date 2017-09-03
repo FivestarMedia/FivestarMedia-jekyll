@@ -113,7 +113,7 @@ body {
     background: #4286f4;
     text-align: center;
     color:white;
-    padding: 6.15vw 3.65vw;
+    padding: 4.5vw 2vw;
 }
 
 h1 {
@@ -140,7 +140,7 @@ h3 {
 }
 
 .serviceHeading {
-    padding: 6.15vw 3.65vw;
+    padding: 4.5vw 2vw;
     text-align: center;
 }
 
@@ -166,7 +166,7 @@ h3 {
     // margin:2.5vw 0;
     // padding-top:40px;
 
-    padding: 6.15vw 3.65vw;
+    padding: 4.5vw 2vw;
     color: #656666;
 }
 
@@ -211,11 +211,11 @@ h3 {
     flex-direction:column;
     justify-content: space-between;
     // height:100%;
-    padding-left:5vw;
+    padding-left:3.5vw;
 }
 
 .serviceText p {
-    font-size: 3.1vw;
+    font-size: 3.2vw;
 }
 
 .toUpper {
@@ -246,6 +246,7 @@ h3 {
 #map {
 	width:100%;
 	height: 40vh;
+    // margin-top:4.5vw;
 }
 
 /* Menu */
@@ -273,8 +274,8 @@ nav ul {
 	/* cursor:default; */
     padding-top:18px;
     /* margin-left:100px; */
-	margin-right:3.65vw;
-    
+	margin-right:2vw;
+
 }
 
 nav ul li a {
@@ -351,7 +352,7 @@ nav ul li ul li .hvr-underline-from-left:before {
 
 nav img {
 	margin-top:20px;
-	margin-left:3.65vw;
+	margin-left:2vw;
 	// margin-left:10px;
 }
 
@@ -370,7 +371,7 @@ nav img {
 .newNav ul {    
 	font-weight: lighter;
 	text-align: right;
-	margin-right:3.65vw;
+	margin-right:2vw;
 	display:inline-block;
 	position:absolute;
 	right:0;
@@ -442,7 +443,7 @@ nav img {
 
 .newNav img {
 	margin-top:5px;
-	margin-left:3.65vw;
+	margin-left:2vw;
 }
 
 .slideNewNavDown {
@@ -780,7 +781,7 @@ color:grey;
 
 h1 {
     font-size:3.75vw;
-    margin:2.5vw;
+    margin:0;
 }
 
 h2 {
