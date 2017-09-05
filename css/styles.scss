@@ -12,7 +12,7 @@ body {
     color: #686666;
     /* min-width:576px; */
     /* max-width:1600px; */
-    /* background-color:black; */
+    // background-color:black;
 }
 
 .home-background {
@@ -221,15 +221,17 @@ h3 {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    cursor:default;
+    // cursor:default;
 }
 
 .footerImg {
-    width:100%;
+    width:80%;
+    // vertical-align: middle;
     // background-color:red;
     // height:0;
     // background-color: red;
     min-height:1px; // STUPID IE FIX
+    margin:0 auto;
 }
 
 .footerImg img {
@@ -325,7 +327,7 @@ h3 {
 /* Menu */
 
 nav {
-cursor:default;
+    cursor:default;
     position:fixed;
 	width:100%;
 	top:0;
@@ -641,6 +643,7 @@ nav img {
     // background-color:   #EDF4FF; light blue
     background-color:#eeeeee;
     color: #656666;
+    text-align: center;
 }
 
 .copyrightRow {
@@ -653,7 +656,7 @@ nav img {
 
 
 .footerCols {
-    text-align: left;   
+    // text-align: left;   
     padding: 4.5vw 1.825vw;
 
     // background-color:red; 
@@ -739,7 +742,7 @@ font-size: 3.5vw;
     display:flex;
     align-items: center;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding:0;
     margin:0;
 }
@@ -750,7 +753,7 @@ font-size: 3.5vw;
     display: block;
     // margin: 0;
     height: auto;
-    width: 27vw;
+    width: 20vw;
     padding: 3.65vw 0vw;
 }
 
@@ -780,14 +783,14 @@ font-size: 3.5vw;
     background:white;
 }
 
-.footerImage {
-    width:135px;    
-}
+// .footerImage {
+//     width:135px;    
+// }
 
-.footerImage img {
-    height:auto;
-    width:100%;
-}
+// .footerImage img {
+//     height:auto;
+//     width:100%;
+// }
 
 .body-container {
     padding:0;
@@ -980,6 +983,10 @@ color:grey;
     padding-bottom:3.075vw;
 }
 
+.footerImg {
+    width:100%;
+}
+
 .copyright {
     // align-items: row;
     padding: 1vw 1.825vw;;
@@ -1002,7 +1009,7 @@ color:grey;
 }
 
 .copyright i {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
 }
 
 .copyright:last-child {
@@ -1061,6 +1068,9 @@ h3 {
     line-height: 2vw;
 }
 
+.footerRow {
+    text-align: left;
+}
 
 // .spacing {
 //     margin-top: 10vw;
@@ -1079,8 +1089,8 @@ h3 {
     // margin:0;
     display:flex;
     align-items: center;
-    flex-wrap:wrap;
-    justify-content: space-between;
+    // flex-wrap:nowrap;
+    justify-content: space-around;
     padding:0;
     margin:0;
 }
@@ -1092,7 +1102,7 @@ h3 {
     display: block;
     // margin: 0;
     height: auto;
-    width: 6vw;
+    width: 4vw;
     // padding-right:1.825vw;
     // display: block;
     // // margin: 0;

@@ -7,7 +7,7 @@ function main() {
 		if ($(this).attr('data-click-state') == 1) {
 
 			$(this).attr('data-click-state', 0);
-			$('body').css("max-width", "1600px");
+			// $('body').css("max-width", "1600px");
 			$('body').css("overflow", "visible");
 			$('.menu').animate({
 				right: "-270px"
@@ -24,25 +24,25 @@ function main() {
 
 				$('.footerBanner').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.locations').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.moreHelp').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('#map').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.body-container').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.banner').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.jumbotron').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				myFunction(thisObject);
 			}, 800);
 		} else {
@@ -52,25 +52,25 @@ function main() {
 			$(this).attr('data-click-state', 1);
 			$('.jumbotron').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.banner').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.body-container').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('#map').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.moreHelp').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.locations').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.footerBanner').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 
 			setTimeout(function () {
 				// $('nav ul').animate({right: "270px"}, 400);
@@ -91,7 +91,7 @@ function main() {
 
 		if ($(this).attr('data-click-state') == 1) {
 			$(this).attr('data-click-state', 0);
-			$('body').css("max-width", "1600px");
+			// $('body').css("max-width", "1600px");
 			$('body').css("overflow", "visible");
 			$('.menu').animate({
 				right: "-270px"
@@ -108,28 +108,28 @@ function main() {
 
 				$('.footerBanner').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.locations').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.moreHelp').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('#map').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.body-container').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.banner').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.jumbotron').animate({
 					opacity: '1'
-				}, 200);
+				}, 400);
 				$('.newNav').animate({
 					backgroundColor: 'rgba(255,255,255,0.95)'
-				}, 200);
+				}, 400);
 				// $('.burger').animate({color: '#000'},200);
 				$('.newNav').css("box-shadow", "1px 1px 5px lightgrey");
 				$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogo.svg");
@@ -149,32 +149,32 @@ function main() {
 			$(this).attr('data-click-state', 1);
 			$('.newNav').animate({
 				backgroundColor: 'rgba(255,255,255,0)'
-			}, 200);
+			}, 400);
 			$('.newNav').css("box-shadow", "none");
 			// $('.burger').animate({color: '#fff'},200);
 			$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogobefore.svg");
 
 			$('.jumbotron').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.banner').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.body-container').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('#map').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.moreHelp').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.locations').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 			$('.footerBanner').animate({
 				opacity: '0.35'
-			}, 200);
+			}, 400);
 
 			setTimeout(function () {
 				$('body').css("overflow", "hidden");
@@ -229,7 +229,12 @@ $(document).ready(function () {
 		// $('a i').css("display","none");
 	};
 
-	$(window).scroll(function () {
+	$(window).resize(function() {
+		var wWidth = $(window).width();
+		$('body').css("max-width", wWidth);
+	});
+
+	$(window).scroll(function() {
 		var vH = $(window).height();
 		if ($(window).scrollTop() >= 300) {
 			$('.newNav').addClass("slideNewNavDown");
