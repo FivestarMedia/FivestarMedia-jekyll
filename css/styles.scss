@@ -873,9 +873,23 @@ color:grey;
 
 
 @media all {
-.proto {
-    display:none;
- }    
+    nav ul li:last-child {
+        display:inline-block;
+     }
+    
+     nav ul li:not(:last-child) {
+        display:none;
+    }
+    
+    
+     .newNav ul li:last-child {
+        display:inline-block;
+     }
+    
+     .newNav ul li:not(:last-child) {
+        display:none;
+    }
+
 }
 
 @media (min-width: 576px) { 
@@ -925,14 +939,26 @@ color:grey;
     //     width:100%;
     // }
 
-        .cross {
+nav ul li:last-child {
     display:none;
  }
 
-.proto {
+ nav ul li:not(:last-child) {
     display:inline-block;
 }
+
+
+ .newNav ul li:last-child {
+    display:none;
+ }
+
+ .newNav ul li:not(:last-child) {
+    display:inline-block;
+}
+
  
+
+
 // .serviceIcon img {
 
 //     width:100%;}
