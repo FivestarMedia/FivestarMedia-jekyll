@@ -22,55 +22,67 @@ function main() {
 			// setTimeout({myFunction(this)}, 1200);	
 			setTimeout(function () {
 
-				$('.footerBanner').animate({
-					opacity: '1'
-				}, 400);
-				$('.locations').animate({
-					opacity: '1'
-				}, 400);
-				$('.moreHelp').animate({
-					opacity: '1'
-				}, 400);
-				$('#map').animate({
-					opacity: '1'
-				}, 400);
-				$('.body-container').animate({
-					opacity: '1'
-				}, 400);
-				$('.banner').animate({
-					opacity: '1'
-				}, 400);
-				$('.jumbotron').animate({
-					opacity: '1'
-				}, 400);
+				// $('.footerBanner').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.locations').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.moreHelp').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('#map').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.body-container').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.banner').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.jumbotron').animate({
+				// 	opacity: '1'
+				// }, 400);
+			
+				$("body > :not(nav, .menu)").animate({
+						opacity: '1'
+					}, 400);
+
 				myFunction(thisObject);
+			
 			}, 800);
 		} else {
 			var bgWidth = $(window).width();
 			$('body').css("max-width", bgWidth);
 			myFunction(this);
 			$(this).attr('data-click-state', 1);
-			$('.jumbotron').animate({
+			
+			// $('.jumbotron').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.banner').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.body-container').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('#map').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.moreHelp').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.locations').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.footerBanner').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+
+			$("body > :not(nav, .menu)").animate({
 				opacity: '0.35'
 			}, 400);
-			$('.banner').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.body-container').animate({
-				opacity: '0.35'
-			}, 400);
-			$('#map').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.moreHelp').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.locations').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.footerBanner').animate({
-				opacity: '0.35'
-			}, 400);
+
 
 			setTimeout(function () {
 				// $('nav ul').animate({right: "270px"}, 400);
@@ -100,48 +112,60 @@ function main() {
 			$('.newNav').animate({
 				right: "0px"
 			}, 400);
+
 			var thisObject = this;
 
 			// setTimeout(function(){ $(".burger").toggleClass('open'); }, 400);
 
 			setTimeout(function () {
 
-				$('.footerBanner').animate({
-					opacity: '1'
-				}, 400);
-				$('.locations').animate({
-					opacity: '1'
-				}, 400);
-				$('.moreHelp').animate({
-					opacity: '1'
-				}, 400);
-				$('#map').animate({
-					opacity: '1'
-				}, 400);
-				$('.body-container').animate({
-					opacity: '1'
-				}, 400);
-				$('.banner').animate({
-					opacity: '1'
-				}, 400);
-				$('.jumbotron').animate({
-					opacity: '1'
-				}, 400);
+				// $('.footerBanner').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.locations').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.moreHelp').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('#map').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.body-container').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.banner').animate({
+				// 	opacity: '1'
+				// }, 400);
+				// $('.jumbotron').animate({
+				// 	opacity: '1'
+				// }, 400);
+
 				$('.newNav').animate({
 					backgroundColor: 'rgba(255,255,255,0.95)'
 				}, 400);
+				
+				$("body > :not(.newNav, .menu)").animate({
+					opacity: '1'
+				}, 400);
+				
+				
+				
+				
 				// $('.burger').animate({color: '#000'},200);
 				$('.newNav').css("box-shadow", "1px 1px 5px lightgrey");
 				$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogo.svg");
-				$('.bar1').css("background-color", "black");
-				$('.bar2').css("background-color", "black");
-				$('.bar3').css("background-color", "black");
+				// $(".[name*='bar']").css("background-color", "black");
+				$('.bar1, .bar2, .bar3').css("background-color", "black");
+				// $('.bar2').css("background-color", "black");
+				// $('.bar3').css("background-color", "black");
 				myFunction(thisObject);
 			}, 800);
 		} else {
-			$('.bar1').css("background-color", "white");
-			$('.bar2').css("background-color", "white");
-			$('.bar3').css("background-color", "white");
+			$('.bar1, .bar2, .bar3').css("background-color", "white");
+			// $(".[name*='bar']").css("background-color", "white");
+			// $('.bar2').css("background-color", "white");
+			// $('.bar3').css("background-color", "white");
 			myFunction(this);
 			var bgWidth = $(window).width();
 			$('body').css("max-width", bgWidth);
@@ -154,25 +178,29 @@ function main() {
 			// $('.burger').animate({color: '#fff'},200);
 			$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogobefore.svg");
 
-			$('.jumbotron').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.banner').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.body-container').animate({
-				opacity: '0.35'
-			}, 400);
-			$('#map').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.moreHelp').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.locations').animate({
-				opacity: '0.35'
-			}, 400);
-			$('.footerBanner').animate({
+			// $('.jumbotron').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.banner').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.body-container').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('#map').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.moreHelp').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.locations').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+			// $('.footerBanner').animate({
+			// 	opacity: '0.35'
+			// }, 400);
+
+			$("body > :not(.newNav, .menu)").animate({
 				opacity: '0.35'
 			}, 400);
 
@@ -219,9 +247,10 @@ $(document).ready(function () {
 	if ($(window).scrollTop() >= 300) {
 		$('.newNav').addClass("slideNewNavDown");
 		$('nav').css("display", "none");
-		$('.bar1').css("background-color", "black");
-		$('.bar2').css("background-color", "black");
-		$('.bar3').css("background-color", "black");
+		$('.bar1, .bar2, .bar3').css("background-color", "black");
+		// $(".[name*='bar']").css("background-color", "black");
+		// $('.bar2').css("background-color", "black");
+		// $('.bar3').css("background-color", "black");
 		// $('a i').css("display","inline");
 	} else {
 		$('.newNav').removeClass("slideNewNavDown");;
@@ -239,16 +268,19 @@ $(document).ready(function () {
 		if ($(window).scrollTop() >= 300) {
 			$('.newNav').addClass("slideNewNavDown");
 			$('nav').css("display", "none");
-			$('.bar1').css("background-color", "black");
-			$('.bar2').css("background-color", "black");
-			$('.bar3').css("background-color", "black");
+			$('.bar1, .bar2, .bar3').css("background-color", "black");
+			// $('.bar1').css("background-color", "black");
+			// $('.bar2').css("background-color", "black");
+			// $('.bar3').css("background-color", "black");
 			// $('a i').css("display","inline");
 		} else {
 			$('.newNav').removeClass("slideNewNavDown");;
 			$('nav').css("display", "inline");
-			$('.bar1').css("background-color", "white");
-			$('.bar2').css("background-color", "white");
-			$('.bar3').css("background-color", "white");
+			$('.bar1, .bar2, .bar3').css("background-color", "white");
+			// $(".[name*='bar']").css("background-color", "white");
+			// $('.bar1').css("background-color", "white");
+			// $('.bar2').css("background-color", "white");
+			// $('.bar3').css("background-color", "white");
 			// $('a i').css("display","none");
 		}
 	});
