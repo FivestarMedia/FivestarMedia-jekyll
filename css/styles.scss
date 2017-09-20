@@ -157,10 +157,83 @@ h3 {
     margin:0;
 }
 
+.greybg {
+    background:#f9f9f9;
+}
+
+.greyerbg {
+    background:#eee;
+}
+
+.darkgreybg {
+    background:#bbb;
+}
+
+.featuresContainer {
+    display:flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+}
+
+.features {
+    text-align: center;
+    padding: 4.5vw 5.825vw;
+}
+
+.featuresPadding {
+    padding: 4.5vw 1.825vw;
+}
+
+.serviceTextBox {
+    font-size: 3.2vw;
+}
+
+.features ul {
+    list-style: none;
+     background-color:white;
+    // width:20vw;
+    padding:0;
+// display:flex;
+// align-items:column;
+}
+
+.features ul li {
+    text-align: center;
+    font-size:3.2vw;
+    padding:1vw;
+    border-bottom:1px solid #eee;
+    width:90%;
+    margin:0 auto;
+}
+
+.features ul li:last-child {
+    border-bottom:none;
+}
+
+.features ul h2 {
+    padding:1vw;
+}
+
+// .features ul h1 {
+//     padding:1vw;
+// }
+
+.serviceDetail {
+    // margin:0;
+    // padding:0;
+    font-size: 1.5vw;
+    // display:flex;
+    // justify-content: space-between;
+    // flex-direction: column;
+    text-align: center;
+}
+
 .serviceHeading {
     padding: 4.5vw 1.825vw;
     text-align: center;
 }
+
 
 // .cross {
 //     padding:0;
@@ -190,6 +263,10 @@ h3 {
 
 .serviceCols:last-child {
     padding-bottom:9vw;
+}
+
+.serviceImage {
+    background-color: #656666;
 }
 
 .serviceCols a {
@@ -235,6 +312,24 @@ h3 {
 }
 
 .footerImg img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    // background-color:blue;
+}
+
+.featuresImg {
+    width:80%;
+    // vertical-align: middle;
+    // background-color:red;
+    // height:0;
+    // background-color: red;
+    min-height:1px; // STUPID IE FIX
+    margin:0 auto;
+}
+
+.featuresImg img {
     display: block;
     margin: 0;
     width: 100%;
@@ -965,6 +1060,10 @@ color:grey;
 
 
 
+.serviceTextBox {
+    font-size: 1.5vw;
+}
+
 
 .banner {
     padding: 3.075vw 1.825vw;
@@ -1010,6 +1109,10 @@ color:grey;
 }
 
 .footerImg {
+    width:100%;
+}
+
+.featuresImg {
     width:100%;
 }
 
@@ -1139,6 +1242,61 @@ h3 {
 
 
 }
+
+
+
+.featuresContainer {
+    display:flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+}
+
+.features {
+    display:flex;
+    text-align: center;
+    padding: 3.075vw 1.825vw;
+    align-items: center;
+}
+
+.featuresPadding {
+    padding: 3.075vw 1.825vw;
+}
+
+.features ul {
+    list-style: none;
+     background-color:white;
+    width:20vw;
+    padding:0;
+
+}
+
+.features ul li {
+    font-size:1.2vw;
+    padding:0.75vw;
+    width:80%;
+}
+
+.features ul h2 {
+    padding:0.75vw;
+}
+
+// .features ul h1 {
+//     padding:0.75vw;
+// }
+
+.serviceDetail {
+    // margin:0;
+    // padding:0;
+    font-size: 1.5vw;
+    // display:flex;
+    // justify-content: space-between;
+    // flex-direction: column;
+    text-align: left;
+}
+
+
+
 
 
 
