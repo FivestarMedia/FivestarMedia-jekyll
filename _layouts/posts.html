@@ -1,0 +1,24 @@
+---
+layout: page
+---
+<body>
+    	{% include menu.html %}
+        <div class="jumbotron blog-background"></div>
+        <div class="body-container">
+
+
+<div class="row">
+        <div class="serviceHeading">
+    <h1 class="toUpper bold">{{ page.title }}</h1>
+    <h2>{{ page.date | date: '%B %d, %Y'}}</h2>
+    <h3>{{ content }}</h3>
+    {% include disqus.html %}
+</div>
+
+
+{% include footermaplesshelpless.html %}
+</div>
+{% include disqus-comment-count.html %}
+</body>
+
+</html>

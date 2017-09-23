@@ -2,25 +2,22 @@
 layout: page
 title: Brampton Vaughan Website Design, Search Engine Optimization and Digital Marketing
 lang: en
-ref: website-design
-permalink: /website-design/
+ref: thank-you
+permalink: /thank-you/
 ---
 
 <body>
 	{% include menu.html %}
 	<div class="jumbotron website-design-background"></div>
 
-
 	<div class="banner">
-		<h2>Fast, modern and elegant websites that are easy to use.</h2>
+		<h2>Thank you! Your message has been received!</h2>
 	</div>
 
 	
 
 	<div class="body-container">
-		<div class="row">
-	
-	
+		<!-- <div class="row">
 			<div class="col-xs-12 serviceHeading">
 				<h1 class="toUpper bold">Website Design</h1>
 				<h3>ipsum dolor sit amet, consectetur adipisicing elit. Sunt qui aut molestiae mollitia quidem quas rem dolor voluptatibus,
@@ -28,15 +25,27 @@ permalink: /website-design/
 					adipisicing elit. Sunt qui aut molestiae mollitia quidem quas rem dolor voluptatibus, est unde numquam dignissimos,
 					nesciunt placeat eveniet ex. Esse tempore quod culpa?</h3>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="row eqHeight greybg">
-			<div class="col-xs-12 col-md-6 featuresPadding">
-				<div class="featuresImg">
-				<img src="{{ site.baseurl }}/images/brampton.jpg">
+			<div class="col-xs-12 col-md-5 featuresPadding">
+
+				<form id="contactform" method="POST">
+					<input type="text" name="name" placeholder="Your name">
+					<input type="email" name="_replyto" placeholder="Your email">
+					<input type="hidden" name="_subject" value="Fivestar Media Contact Page" />
+					<input type="hidden" name="_next" value="https://fivestarmedia.com/" />
+					<textarea name="message" placeholder="Your message"></textarea>
+					<input type="text" name="_gotcha" style="display:none" />
+					<input type="submit" value="Send">
+				</form>
+				<script>
+					var contactform =  document.getElementById('contactform');
+					contactform.setAttribute('action', '//formspree.io/' + 'fivestarmediahq' + '@' + 'gmail' + '.' + 'com');
+				</script>
+
 			</div>
-			</div>
-			<div class="col-xs-12 col-md-6 featuresPadding">
+			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -49,12 +58,12 @@ permalink: /website-design/
 			</div>
 		</div>
 
-		<div class="row eqHeight greyerbg">
-			<div class="col-xs-12 col-md-6 featuresPadding">
+		<!-- <div class="row eqHeight greyerbg">
+			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="featuresImg">
 				<img src="{{ site.baseurl }}/images/brampton.jpg">
 			</div></div>
-			<div class="col-xs-12 col-md-6 featuresPadding">
+			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Mobile Responsive</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -68,12 +77,12 @@ permalink: /website-design/
 		</div>
 
 		<div class="row eqHeight greybg">
-			<div class="col-xs-12 col-md-6 featuresPadding">
+			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="featuresImg">
 				<img src="{{ site.baseurl }}/images/brampton.jpg">
 			</div>	
 			</div>
-			<div class="col-xs-12 col-md-6 featuresPadding">
+			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -87,12 +96,12 @@ permalink: /website-design/
 		</div>
 
 		<div class="row eqHeight greyerbg">
-			<div class="col-xs-12 col-md-6 featuresPadding">
+			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="featuresImg">
 				<img src="{{ site.baseurl }}/images/brampton.jpg">
 			</div>	
 			</div>
-			<div class="col-xs-12 col-md-6 featuresPadding">
+			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -103,9 +112,9 @@ permalink: /website-design/
 						first impression, so make it the best.</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-xs-12 serviceHeading">
 				<h1 class="toUpper bold">Website Prices</h1>
 				<h3>ipsum dolor sit amet, consectetur adipisicing elit. Sunt qui aut molestiae mollitia quidem quas rem dolor voluptatibus,
@@ -185,10 +194,9 @@ permalink: /website-design/
 					<li>ABC</li>
 				</ul>
 			</div>
-		</div>
+		</div> -->
 	</div>
-	{% include footermapless.html %}
-
+	{% include footer.html %}
 </body>
 
 </html>
