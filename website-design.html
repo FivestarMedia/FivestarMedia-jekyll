@@ -2,20 +2,52 @@
 layout: page
 title: Brampton Vaughan Website Design, Search Engine Optimization and Digital Marketing
 permalink: /website-design/
+comments: true
 ---
 
 <body>
 	{% include menu.html %}
 	<div class="jumbotron website-design-background"></div>
 
-	<!-- <div class="banner">
-		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit esse vero facilis commodi molestiae cum odit placeat
-			sit sunt suscipit nostrum ab distinctio, iure voluptatum. Dolorum recusandae soluta, officiis in.</h2>
-	</div> -->
+
+	<div class="banner">
+		<h2>Fast, modern and elegant websites that are easy to use.</h2>
+	</div>
+
+	
 
 	<div class="body-container">
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 serviceHeading">
+			{% if page.comments %}
+			<div id="disqus_thread"></div>
+			<script>
+			
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://fivestar-media.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+										
+			{% endif %}
+		</div>
+	</div>
+
+	<div class="row">
+	
+	
+			<div class="col-xs-12 serviceHeading">
 				<h1 class="toUpper bold">Website Design</h1>
 				<h3>ipsum dolor sit amet, consectetur adipisicing elit. Sunt qui aut molestiae mollitia quidem quas rem dolor voluptatibus,
 					est unde numquam dignissimos, nesciunt placeat eveniet ex. Esse tempore quod culpa? ipsum dolor sit amet, consectetur
@@ -25,12 +57,12 @@ permalink: /website-design/
 		</div>
 
 		<div class="row eqHeight greybg">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 featuresPadding">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="featuresImg">
 				<img src="{{ site.baseurl }}/images/brampton.jpg">
 			</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 featuresPadding col-xs-12">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -44,11 +76,11 @@ permalink: /website-design/
 		</div>
 
 		<div class="row eqHeight greyerbg">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 featuresPadding">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="featuresImg">
 				<img src="{{ site.baseurl }}/images/brampton.jpg">
 			</div></div>
-			<div class="col-lg-6 col-md-6 col-sm-12 featuresPadding col-xs-12">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Mobile Responsive</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -62,12 +94,12 @@ permalink: /website-design/
 		</div>
 
 		<div class="row eqHeight greybg">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 featuresPadding">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="featuresImg">
 				<img src="{{ site.baseurl }}/images/brampton.jpg">
 			</div>	
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 featuresPadding col-xs-12">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -81,12 +113,12 @@ permalink: /website-design/
 		</div>
 
 		<div class="row eqHeight greyerbg">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 featuresPadding">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="featuresImg">
 				<img src="{{ site.baseurl }}/images/brampton.jpg">
 			</div>	
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 featuresPadding col-xs-12">
+			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
 					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
@@ -100,7 +132,7 @@ permalink: /website-design/
 		</div>
 
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 serviceHeading">
+			<div class="col-xs-12 serviceHeading">
 				<h1 class="toUpper bold">Website Prices</h1>
 				<h3>ipsum dolor sit amet, consectetur adipisicing elit. Sunt qui aut molestiae mollitia quidem quas rem dolor voluptatibus,
 					est unde numquam dignissimos, nesciunt placeat eveniet ex. Esse tempore quod culpa? ipsum dolor sit amet, consectetur
@@ -110,7 +142,7 @@ permalink: /website-design/
 		</div>
 
 		<div class="row eqHeight greyerbg featuresContainer">
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 features">
+			<div class="col-xs-12 col-md-3 features">
 				<ul>
 					<h2 class="toUpper bold">Template</h2>
 					<h2 class="toUpper bold">$700</h2>
@@ -123,7 +155,7 @@ permalink: /website-design/
 				</ul>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 features">
+			<div class="col-xs-12 col-md-3 features">
 				<ul>
 					<h2 class="toUpper bold">Template+</h2>
 					<h2 class="toUpper bold">$700</h2>
@@ -139,7 +171,7 @@ permalink: /website-design/
 				</ul>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 features">
+			<div class="col-xs-12 col-md-3 features">
 				<ul>
 					<h2 class="toUpper bold">Custom</h2>
 					<h2 class="toUpper bold">$700</h2>
@@ -158,7 +190,7 @@ permalink: /website-design/
 				</ul>
 			</div>
 
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 features">
+			<div class="col-xs-12 col-md-3 features">
 				<ul>
 					<h2 class="toUpper bold">Enterprise</h2>
 					<h2 class="toUpper bold">$700</h2>
@@ -182,6 +214,7 @@ permalink: /website-design/
 		</div>
 	</div>
 	{% include footermapless.html %}
+	<script id="dsq-count-scr" src="//fivestar-media.disqus.com/count.js" async></script>
 </body>
 
 </html>
