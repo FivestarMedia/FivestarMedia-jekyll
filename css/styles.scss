@@ -177,7 +177,7 @@ h1.splash {
     // font-size:10vw;
     // z-index:10;
     line-height:12.5vw;
-    font-size:7.8vw;
+    font-size:7vw;
 }
 
 h2.splash {
@@ -185,7 +185,7 @@ h2.splash {
     color:white;
     padding: 0 0 0 1.825vw;
     margin:0;
-    font-size:4.5vw;
+    font-size:4vw;
     line-height:7.2vw;
 }
 
@@ -431,11 +431,6 @@ ul.blog h2 {
     width: 100%;
 }
 
-
-
-
-
-
 .serviceText {
     // padding:0 0 0 20px;
     width:70vw;
@@ -461,6 +456,10 @@ ul.blog h2 {
 .bold {
     font-weight:bold;
     // margin:0;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .serviceText  {
