@@ -5,17 +5,12 @@ lang: en
 ref: thank-you
 permalink: /thank-you/
 ---
-
 <body>
 	{% include menu.html %}
 	<div class="jumbotron website-design-background"></div>
-
-	<div class="banner">
+	<div class="contactBanner">
 		<h2>Thank you! Your message has been received!</h2>
 	</div>
-
-	
-
 	<div class="body-container">
 		<!-- <div class="row">
 			<div class="col-xs-12 serviceHeading">
@@ -26,10 +21,8 @@ permalink: /thank-you/
 					nesciunt placeat eveniet ex. Esse tempore quod culpa?</h3>
 			</div>
 		</div> -->
-
 		<div class="row eqHeight greybg">
 			<div class="col-xs-12 col-md-5 featuresPadding">
-
 				<form id="contactform" method="POST">
 					<input type="text" name="name" placeholder="Your name">
 					<input type="email" name="_replyto" placeholder="Your email">
@@ -40,24 +33,22 @@ permalink: /thank-you/
 					<input type="submit" value="Send">
 				</form>
 				<script>
-					var contactform =  document.getElementById('contactform');
+					var contactform = document.getElementById('contactform');
 					contactform.setAttribute('action', '//formspree.io/' + 'fivestarmediahq' + '@' + 'gmail' + '.' + 'com');
 				</script>
-
 			</div>
 			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="serviceDetail">
 					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
-					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
+					<p class="serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
 						so make it the best. Your website is your company's first impression, so make it the best. Your website is your company's
 						first impression, so make it the best.</p>
-					<p class= "serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
+					<p class="serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
 						so make it the best. Your website is your company's first impression, so make it the best. Your website is your company's
 						first impression, so make it the best.</p>
 				</div>
 			</div>
 		</div>
-
 		<!-- <div class="row eqHeight greyerbg">
 			<div class="col-xs-12 col-md-5 featuresPadding">
 				<div class="featuresImg">
@@ -198,5 +189,4 @@ permalink: /thank-you/
 	</div>
 	{% include footer.html %}
 </body>
-
 </html>

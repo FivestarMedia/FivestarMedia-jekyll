@@ -12,13 +12,14 @@ body {
     color: #686666;
     /* min-width:576px; */
     /* max-width:1600px; */
-    // background-color:black;
+    // background-color:none;
+    background:white;
 }
 
 .home-background {
     background:linear-gradient(
-      rgba(0, 0, 0, 0.1), 
-      rgba(0, 0, 0, 0.1)
+      rgba(0, 0, 0, 0.15), 
+      rgba(0, 0, 0, 0.15)
     ),
     url($baseurl + "/images/home-background.jpg") no-repeat center;
 	background-size: cover;
@@ -124,13 +125,13 @@ body {
 }
 
 .contactBanner {
-    background: #a7740c;
+    background: green;
     text-align: center;
     color:white;
     padding: 4.5vw 1.825vw;
 }
 
-.contactBanner h2 a {
+.banner h2 a {
     text-decoration: none;
     color:white;
 }
@@ -153,6 +154,7 @@ h1 {
     font-size:6.5vw;
     margin:5vw;
     line-height:9vw;
+    // font-weight: bold;
 }
 
 h2 {
@@ -165,6 +167,34 @@ h3 {
     font-size:3.75vw;
     margin:0;
     line-height: 6vw;
+}
+
+h1.splash {
+    text-align: left;
+    color:white;
+    padding: 30vh 0 0 1.825vw;
+    margin:0;
+    // font-size:10vw;
+    // z-index:10;
+    line-height:12.5vw;
+    font-size:7.8vw;
+}
+
+h2.splash {
+    text-align: left;
+    color:white;
+    padding: 0 0 0 1.825vw;
+    margin:0;
+    font-size:4.5vw;
+    line-height:7.2vw;
+}
+
+h1.splash span {
+    display:block;
+}
+
+h2.splash span {
+    display:block;
 }
 
 .bannerBottom h1 {
@@ -264,7 +294,11 @@ ul.blog h2 {
     padding:1vw;
 }
 
-
+.blogRow {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
@@ -1019,6 +1053,35 @@ color:grey;
  /* padding-top:2px;  */
 }
 
+.nameEmail {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.inputField {
+    width:49%;
+    font-size: 1.2vw;
+    padding: 0.5vw;
+}
+
+.textBox {
+    margin-top:15px;
+    width:100%;
+    font-size: 1.2vw;
+    padding: 0.5vw;
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 @media all {
     nav > ul > li:last-child {
@@ -1041,11 +1104,50 @@ color:grey;
 }
 
 @media (min-width: 576px) { 
+    h1.splash {
+        // text-align: left;
+        // color:white;
+        // padding: 30vh 0 0 1.825vw;
+        // margin:0;
+        // font-size:10vw;
+        // z-index:10;
+        font-size:5.4vw;
+        line-height:8.6vw;
+    }
+    
+    h2.splash {
+        // text-align: left;
+        // color:white;
+        // padding: 0 0 0 1.825vw;
+        // margin:0;
+        font-size:3.75vw;
+        line-height:6vw;
+    }
 }
 
 
 // when width becomes >= 768px
 @media (min-width: 768px) { 
+
+    h1.splash {
+        // text-align: left;
+        // color:white;
+        // padding: 30vh 0 0 1.825vw;
+        // margin:0;
+        // font-size:10vw;
+        // z-index:10;
+        font-size:5vw;
+        line-height:8vw;
+    }
+    
+    h2.splash {
+        // text-align: left;
+        // color:white;
+        // padding: 0 0 0 1.825vw;
+        // margin:0;
+        font-size:2.7vw;
+        line-height:4.3vw;
+    }
 
 // .blockImg img{
     
@@ -1077,6 +1179,30 @@ color:grey;
 
 
 @media (min-width: 992px) { 
+
+
+    h1.splash {
+        // text-align: left;
+        // color:white;
+        // padding: 30vh 0 0 1.825vw;
+        // margin:0;
+        // font-size:10vw;
+        // z-index:10;
+        font-size:3.25vw;
+        line-height:5.2vw;
+    }
+    
+    h2.splash {
+        // text-align: left;
+        // color:white;
+        // padding: 0 0 0 1.825vw;
+        // margin:0;
+        font-size:1.8vw;
+        line-height:2.9vw;
+    }
+
+
+
 
     // .footerText {
     //     text-align: left;
@@ -1465,3 +1591,50 @@ h3 {
     transition: transform 0.75s ease-in-out;
     -webkit-transition: -webkit-transform 0.75s ease-in-out; */
 }
+
+
+
+
+
+
+/********* BUTTON ************/
+// .button {
+//     display: inline-block;
+//     border-radius: 4px;
+//     background-color: #4286f4;
+//     border: none;
+//     color: #FFFFFF;
+//     text-align: center;
+//     font-size: 1.5vw;
+
+//     padding: 20px;
+//     width: 200px;
+//     transition: all 0.5s;
+//     cursor: pointer;
+//     margin: 10vh 0 0 1.825vw;
+//   }
+  
+//   .button span {
+//     cursor: pointer;
+//     display: inline-block;
+//     position: relative;
+//     transition: 0.5s;
+//   }
+  
+//   .button span:after {
+//     content: '\279c';
+//     position: absolute;
+//     opacity: 0;
+//     top: 0;
+//     right: -20px;
+//     transition: 0.5s;
+//   }
+  
+//   .button:hover span {
+//     padding-right: 25px;
+//   }
+  
+//   .button:hover span:after {
+//     opacity: 1;
+//     right: 0;
+//   }

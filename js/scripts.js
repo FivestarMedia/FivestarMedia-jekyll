@@ -3,11 +3,9 @@
 function main() {
 
 	$('.icon-menu').on('click', function () {
-		$('body').css("background", "black");
-		if ($(this).attr('data-click-state') == 1) {
 
+		if ($(this).attr('data-click-state') == 1) {
 			$(this).attr('data-click-state', 0);
-			// $('body').css("max-width", "1600px");
 			$('body').css("overflow", "visible");
 			$('.menu').animate({
 				right: "-270px"
@@ -51,9 +49,12 @@ function main() {
 				myFunction(thisObject);
 			
 			}, 800);
+			// setTimeout(function () {$('body').css("background", "white");}, 1300);
 		} else {
+		$('body').css("background", "black");
 			var bgWidth = $(window).width();
 			$('body').css("max-width", bgWidth);
+	
 			myFunction(this);
 			$(this).attr('data-click-state', 1);
 			
@@ -99,11 +100,12 @@ function main() {
 	});
 
 	$('.icon-menuBottom').on('click', function () {
-		$('body').css("background", "black");
+
 
 		if ($(this).attr('data-click-state') == 1) {
 			$(this).attr('data-click-state', 0);
 			// $('body').css("max-width", "1600px");
+
 			$('body').css("overflow", "visible");
 			$('.menu').animate({
 				right: "-270px"
@@ -161,16 +163,19 @@ function main() {
 				// $('.bar3').css("background-color", "black");
 				myFunction(thisObject);
 			}, 800);
+			// setTimeout(function () {$('body').css("background", "white");}, 1300);
 		} else {
+			$('body').css("background", "black");
 			$('.bar1, .bar2, .bar3').css("background-color", "white");
 			// $(".[name*='bar']").css("background-color", "white");
 			// $('.bar2').css("background-color", "white");
 			// $('.bar3').css("background-color", "white");
 			myFunction(this);
-			var bgWidth = $(window).width();
-			$('body').css("max-width", bgWidth);
+			var bggWidth = $(window).width();
+			$('body').css("max-width", bggWidth);
 
 			$(this).attr('data-click-state', 1);
+
 			$('.newNav').animate({
 				backgroundColor: 'rgba(255,255,255,0)'
 			}, 400);
@@ -244,7 +249,7 @@ function initMap() {
 
 $(document).ready(function () {
 	main();
-	if ($(window).scrollTop() >= 300) {
+	if ($(document).scrollTop() >= 150) {
 		$('.newNav').addClass("slideNewNavDown");
 		$('nav').css("display", "none");
 		$('.bar1, .bar2, .bar3').css("background-color", "black");
@@ -261,14 +266,21 @@ $(document).ready(function () {
 	$(window).resize(function() {
 		var wWidth = $(window).width();
 		$('body').css("max-width", wWidth);
+		// if ($('.icon-menu').attr('data-click-state') == 0)
+// {$('body').css("background", "white");}
+// else
+// {$('body').css("background", "white");}
+$('body').css("background", "white");
+		
 	});
 
 	$(window).scroll(function() {
-		var vH = $(window).height();
-		if ($(window).scrollTop() >= 300) {
+		// var vH = $(document).height();
+		if ($(document).scrollTop() >= 150) {
 			$('.newNav').addClass("slideNewNavDown");
-			$('nav').css("display", "none");
-			$('.bar1, .bar2, .bar3').css("background-color", "black");
+			$('nav').css("display", "none");	
+			// alert($(window).scrollTop());
+			$('.bar1, .bar2, .bar3').css("background-color", "black"); //problem here with arrow color
 			// $('.bar1').css("background-color", "black");
 			// $('.bar2').css("background-color", "black");
 			// $('.bar3').css("background-color", "black");
