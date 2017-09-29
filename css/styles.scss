@@ -3,7 +3,7 @@
 $baseurl: "{{ site.baseurl }}";
 
 body {
-    font-family: 'Arial', 'sans-serif';
+    font-family: 'PT Sans', 'sans-serif';
     position: relative;
     right: 0;
     margin: 0;
@@ -16,10 +16,11 @@ body {
     margin: 0;
     padding: 0;
     min-height:350px;
+    height: 80vh;
 }
 
 .bg.home {
-    background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url($baseurl + "/images/home-background.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url($baseurl + "/images/home-background.jpg") no-repeat center;
     height: 120vh;
     min-height: 600px;
     background-size: cover;
@@ -27,26 +28,22 @@ body {
 
 .bg.website-design {
     background: url($baseurl + "/images/website-design-background.jpg") no-repeat center;
-    height: 80vh;
     background-size: cover;
 }
 
 .bg.seo {
     background: linear-gradient(rgba(100, 100, 100, 0.1), rgba(100, 100, 100, 0.1)), url($baseurl + "/images/seo-background.jpg") no-repeat center;
     background-size: cover;
-    height: 80vh;
 }
 
 .bg.digital-marketing {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url($baseurl + "/images/digital-marketing-background.jpg") no-repeat center;
     background-size: cover;
-    height: 80vh;
 }
 
 .bg.blog {
     background-color: darkgrey;
     background-size: cover;
-    height: 80vh;
 }
 
 .banner {
@@ -62,7 +59,11 @@ body {
 
 .row.eqHeight.icons {
     text-align: center;
-    // background: #f1f1f1;
+    padding: 3vw 0;
+}
+
+.row.eqHeight.icons.secondRow {
+    padding:0 0 3vw 0;
 }
 
 .icons img {
@@ -70,6 +71,14 @@ body {
     width:40px;
     height:auto;
 }
+
+.shadow {
+    box-shadow: 0px 0px 30px silver;
+}
+
+// .shadowLight {
+//     box-shadow: 0px 0px 30px silver;
+// }
 
 .banner h2 a {
     text-decoration: none;
@@ -127,7 +136,7 @@ h2.splash span {
 }
 
 .greybg {
-    background: #f1f1f1;
+    background: #f9f9f9;
 }
 
 .greyerbg {
@@ -153,12 +162,12 @@ h2.splash span {
 
 .serviceTextBox {
     font-size: 3.2vw;
-    color: #9C989C;
+    // color: #4F4D4F;
 }
 
 .serviceTextBoxHeading {
     font-size: 3.2vw;
-    color: #4F4D4F;
+    // color: #4F4D4F;
 }
 
 .features ul {
