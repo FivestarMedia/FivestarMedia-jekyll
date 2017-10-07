@@ -99,7 +99,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3.75vw;
+    font-size: 4vw;
     margin: 0;
     line-height: 6vw;
     color: #767376;
@@ -119,7 +119,7 @@ h2.splash {
     color: white;
     padding: 0 0 0 1.825vw;
     margin: 0;
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: 7.2vw;
 }
 
@@ -233,6 +233,10 @@ ul.blog h2 {
     text-align: center;
 }
 
+.serviceHeading.Why {
+    background:whitesmoke;
+}
+
 .serviceContainer {
     display: flex;
 }
@@ -306,19 +310,19 @@ ul.blog h2 {
 }
 
 .serviceText {
-    width: 70vw;
+    width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 3.5vw;
 }
 
-.spacer {
-    border-bottom:1px solid lightgrey;
-}
+// .spacer {
+//     border-bottom:1px solid lightgrey;
+// }
 
 .serviceText p {
-    font-size: 3.75vw;
+    font-size: 4vw;
 }
 
 .toUpper {
@@ -625,7 +629,7 @@ nav img {
 }
 
 .footerCols p {
-    font-size: 3.5vw;
+    font-size: 4vw;
 }
 
 .footerCols p span:first-child {
@@ -851,7 +855,7 @@ nav img {
         text-align: right;
     }
     .serviceText {
-        width: 21.025vw;
+        width: 23.025vw;
         padding-left: 1.5vw;
     }
     .serviceText p {
