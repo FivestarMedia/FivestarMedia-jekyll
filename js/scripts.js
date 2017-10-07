@@ -249,7 +249,7 @@ function initMap() {
 
 $(document).ready(function () {
 	main();
-	if ($(document).scrollTop() >= 150) {
+	if ($(document).scrollTop() >= 100) {
 		$('.newNav').addClass("slideNewNavDown");
 		$('nav').css("display", "none");
 		$('.bar1, .bar2, .bar3').css("background-color", "black");
@@ -276,7 +276,7 @@ $('body').css("background", "white");
 
 	$(window).scroll(function() {
 		// var vH = $(document).height();
-		if ($(document).scrollTop() >= 150) {
+		if ($(document).scrollTop() >= 100) {
 			$('.newNav').addClass("slideNewNavDown");
 			$('nav').css("display", "none");	
 			// alert($(window).scrollTop());
