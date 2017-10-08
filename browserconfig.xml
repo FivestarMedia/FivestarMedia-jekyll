@@ -1,0 +1,16 @@
+---
+layout:
+permalink: /ieconfig.xml
+---
+<?xml version="1.0" encoding="utf-8"?>  
+<browserconfig>  
+  <msapplication>
+    <tile>
+      <square70x70logo src="{{ site.baseurl }}/images/mstile-70.png"/>
+      <square150x150logo src="{{ site.baseurl }}/images/mstile-270.png"/>
+      <square310x310logo src="{{ site.baseurl }}/images/mstile-310.png"/>
+      <wide310x150logo src="{{ site.baseurl }}/images/mstile-310x150.png"/>
+      <TileColor>#ffffff</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig> 

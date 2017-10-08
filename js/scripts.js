@@ -11,7 +11,7 @@ function main() {
 				right: "-270px"
 			}, 400);
 
-			$('nav').animate({
+			$('.oldNavWrapper').animate({
 				right: "0px"
 			}, 400);
 			var thisObject = this;
@@ -42,7 +42,7 @@ function main() {
 				// 	opacity: '1'
 				// }, 400);
 			
-				$("body > :not(nav, .menu)").animate({
+				$("body > :not(.oldNavWrapper, .menu)").animate({
 						opacity: '1'
 					}, 400);
 
@@ -80,14 +80,14 @@ function main() {
 			// 	opacity: '0.35'
 			// }, 400);
 
-			$("body > :not(nav, .menu)").animate({
+			$("body > :not(.oldNavWrapper, .menu)").animate({
 				opacity: '0.35'
 			}, 400);
 
 
 			setTimeout(function () {
 				// $('nav ul').animate({right: "270px"}, 400);
-				$('nav').animate({
+				$('.oldNavWrapper').animate({
 					right: "270px"
 				}, 400);
 				// $(".burger").toggleClass('open');	
@@ -111,7 +111,7 @@ function main() {
 				right: "-270px"
 			}, 400);
 
-			$('.newNav').animate({
+			$('.newNavWrapper').animate({
 				right: "0px"
 			}, 400);
 
@@ -143,11 +143,11 @@ function main() {
 				// 	opacity: '1'
 				// }, 400);
 
-				$('.newNav').animate({
+				$('.newNavWrapper').animate({
 					backgroundColor: 'rgba(255,255,255,0.95)'
 				}, 400);
 				
-				$("body > :not(.newNav, .menu)").animate({
+				$("body > :not(.newNavWrapper, .menu)").animate({
 					opacity: '1'
 				}, 400);
 				
@@ -155,8 +155,8 @@ function main() {
 				
 				
 				// $('.burger').animate({color: '#000'},200);
-				$('.newNav').css("box-shadow", "1px 1px 5px lightgrey");
-				$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogo.svg");
+				// $('.newNavWrapper').css("box-shadow", "1px 1px 5px lightgrey");
+				$('.newNavWrapper img').attr("src", "{{ site.baseurl }}/images/fivestarlogo.svg");
 				// $(".[name*='bar']").css("background-color", "black");
 				$('.bar1, .bar2, .bar3').css("background-color", "black");
 				// $('.bar2').css("background-color", "black");
@@ -176,12 +176,12 @@ function main() {
 
 			$(this).attr('data-click-state', 1);
 
-			$('.newNav').animate({
+			$('.newNavWrapper').animate({
 				backgroundColor: 'rgba(255,255,255,0)'
 			}, 400);
-			$('.newNav').css("box-shadow", "none");
+			// $('.newNavWrapper').css("box-shadow", "none");
 			// $('.burger').animate({color: '#fff'},200);
-			$('.newNav img').attr("src", "{{ site.baseurl }}/images/fivestarlogobefore.svg");
+			$('.newNavWrapper img').attr("src", "{{ site.baseurl }}/images/fivestarlogobefore.svg");
 
 			// $('.jumbotron').animate({
 			// 	opacity: '0.35'
@@ -205,13 +205,13 @@ function main() {
 			// 	opacity: '0.35'
 			// }, 400);
 
-			$("body > :not(.newNav, .menu)").animate({
+			$("body > :not(.newNavWrapper, .menu)").animate({
 				opacity: '0.35'
 			}, 400);
 
 			setTimeout(function () {
 				$('body').css("overflow", "hidden");
-				$('.newNav').animate({
+				$('.newNavWrapper').animate({
 					right: "270px"
 				}, 400);
 				// $(".burger").toggleClass('open');
@@ -250,16 +250,18 @@ function initMap() {
 $(document).ready(function () {
 	main();
 	if ($(document).scrollTop() >= 100) {
-		$('.newNav').addClass("slideNewNavDown");
-		$('nav').css("display", "none");
+		$('.oldNav').css("display", "none");
+		$('.newNavWrapper').addClass("slideNewNavDown");
+
 		$('.bar1, .bar2, .bar3').css("background-color", "black");
 		// $(".[name*='bar']").css("background-color", "black");
 		// $('.bar2').css("background-color", "black");
 		// $('.bar3').css("background-color", "black");
 		// $('a i').css("display","inline");
 	} else {
-		$('.newNav').removeClass("slideNewNavDown");;
-		$('nav').css("display", "inline");
+		$('.oldNav').css("display", "flex");
+		$('.newNavWrapper').removeClass("slideNewNavDown");;
+
 		// $('a i').css("display","none");
 	};
 
@@ -271,14 +273,24 @@ $(document).ready(function () {
 // else
 // {$('body').css("background", "white");}
 $('body').css("background", "white");
-		
+
+
+
+
+
+
+
+
+
 	});
 
 	$(window).scroll(function() {
 		// var vH = $(document).height();
 		if ($(document).scrollTop() >= 100) {
-			$('.newNav').addClass("slideNewNavDown");
-			$('nav').css("display", "none");	
+
+			$('.oldNav').css("display", "none");	
+			$('.newNavWrapper').addClass("slideNewNavDown");
+
 			// alert($(window).scrollTop());
 			$('.bar1, .bar2, .bar3').css("background-color", "black"); //problem here with arrow color
 			// $('.bar1').css("background-color", "black");
@@ -286,8 +298,9 @@ $('body').css("background", "white");
 			// $('.bar3').css("background-color", "black");
 			// $('a i').css("display","inline");
 		} else {
-			$('.newNav').removeClass("slideNewNavDown");;
-			$('nav').css("display", "inline");
+			$('.oldNav').css("display", "flex");
+			$('.newNavWrapper').removeClass("slideNewNavDown");;
+
 			$('.bar1, .bar2, .bar3').css("background-color", "white");
 			// $(".[name*='bar']").css("background-color", "white");
 			// $('.bar1').css("background-color", "white");
