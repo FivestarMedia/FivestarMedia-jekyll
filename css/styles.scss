@@ -23,7 +23,7 @@ body {
 
 .bg.home {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/mobile-home-background.jpg") no-repeat center;
-    height: 120vh;
+    // height: 120vh;
     min-height: 600px;
     background-size: cover;
 }
@@ -843,7 +843,7 @@ ul.blog h2 {
 
 .bg.home {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
-    // height: 120vh;
+    height: 120vh;
     // min-height: 600px;
     background-size: cover;
 }
