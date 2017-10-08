@@ -183,7 +183,7 @@ h2.splash span {
 // }
 
 .logo {
-    height:9.75vw;
+    height:14vw;
     width:auto;
 }
 
@@ -377,7 +377,7 @@ ul.blog h2 {
     right:0;
     z-index:1;
     width: 100%;
-    height: 9.75vw;
+    height: 14vw;
     // margin:0 1.825vw;
 }
 
@@ -390,7 +390,7 @@ ul.blog h2 {
     justify-content: space-between;
     padding:0 1.825vw;
     z-index:1;
-    height: 9.75vw;
+    height: 14vw;
 }
 
 .oldNav ul {
@@ -465,11 +465,11 @@ ul.blog h2 {
 
 .newNavWrapper {
     position:fixed;
-    top: -9.75vw;
+    top: -14vw;
     right:0;
     z-index:99;
     width: 100%;
-    height: 9.75vw;
+    height: 14vw;
     // margin:0 1.825vw;
     // display:inline-block;
 }
@@ -482,7 +482,7 @@ ul.blog h2 {
     justify-content: space-between;
     padding:0 1.825vw;
     z-index: 99;
-    height: 9.75vw;
+    height: 14vw;
     background-color: rgba(255, 255, 255, 0.95);
 }
 
@@ -587,7 +587,7 @@ ul.blog h2 {
 
 .slideNewNavDown {
     transition: transform 0.5s;
-    transform: translateY(9.6vw);
+    transform: translateY(13.9vw);
 }
 
 // .hvr-underline-from-left:before {
@@ -1025,7 +1025,7 @@ ul.blog h2 {
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
 
 // Hamburger
 .bar1, .bar2, .bar3 {
@@ -1047,4 +1047,28 @@ ul.blog h2 {
 
 .change .bar3 {
     transform: translate3d(2vw, -1vw, 0) rotate(-45deg) scale(0.7, 1);
+}
+}
+
+
+// Hamburger
+.bar1, .bar2, .bar3 {
+    width: 28px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+.change .bar1 {
+    transform: translate3d(8px, 4px, 0) rotate(45deg) scale(0.7, 1);
+}
+
+.change .bar2 {
+    transform: rotate(-180deg);
+}
+
+.change .bar3 {
+    transform: translate3d(8px, -4px, 0) rotate(-45deg) scale(0.7, 1);
 }
