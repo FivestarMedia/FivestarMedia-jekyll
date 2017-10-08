@@ -1,6 +1,8 @@
 ---
 ---
 $baseurl: "{{ site.baseurl }}";
+$bluecolor: #4286f4;
+$thankyoucolor: orange;
 
 body {
     font-family: 'PT Sans', 'sans-serif';
@@ -20,7 +22,7 @@ body {
 }
 
 .bg.home {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/mobile-home-background.jpg") no-repeat center;
     height: 120vh;
     min-height: 600px;
     background-size: cover;
@@ -51,7 +53,7 @@ body {
 }
 
 .banner {
-    background: #4286f4;
+    background: $bluecolor;
     // background: #a88e2d;
     text-align: center;
     color: white;
@@ -59,7 +61,7 @@ body {
 }
 
 .banner.contact {
-    background: orange;
+    background: $thankyoucolor;
 }
 
 .row.eqHeight.icons {
@@ -657,7 +659,7 @@ ul.blog h2 {
 }
 
 .copyright ul li a:hover {
-    color: #4286f4;
+    color: $bluecolor;
 }
 
 .copyright i {
@@ -835,7 +837,18 @@ ul.blog h2 {
 }
 
 @media (min-width: 768px) {
-    .logo, .oldNavWrapper, .oldNav, .newNavWrapper, .newNav {
+// .bg.home{
+
+// }
+
+.bg.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
+    // height: 120vh;
+    // min-height: 600px;
+    background-size: cover;
+}
+
+.logo, .oldNavWrapper, .oldNav, .newNavWrapper, .newNav {
         height:7.5vw;
     }
     .newNavWrapper, .newNav {
