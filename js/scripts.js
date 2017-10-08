@@ -261,7 +261,7 @@ $(document).ready(function () {
 	} else {
 		$('.oldNav').css("display", "flex");
 		$('.newNavWrapper').removeClass("slideNewNavDown");;
-
+		// $('.newNav').css("display", "none");
 		// $('a i').css("display","none");
 	};
 
@@ -298,8 +298,11 @@ $('body').css("background", "white");
 			// $('.bar3').css("background-color", "black");
 			// $('a i').css("display","inline");
 		} else {
+			$('.newNavWrapper').removeClass("slideNewNavDown");
+			// $('.newNav ul li ul li').css("display", "none");	
 			$('.oldNav').css("display", "flex");
-			$('.newNavWrapper').removeClass("slideNewNavDown");;
+
+
 
 			$('.bar1, .bar2, .bar3').css("background-color", "white");
 			// $(".[name*='bar']").css("background-color", "white");
