@@ -105,7 +105,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3.75vw;
+    font-size: 4.5vw;
     margin: 0;
     line-height: 6vw;
     color: #767376;
@@ -339,7 +339,7 @@ ul.blog h2 {
 }
 
 .serviceText p {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
 }
 
 .toUpper {
@@ -348,6 +348,10 @@ ul.blog h2 {
 
 .bold {
     font-weight: bold;
+}
+
+p.bold {
+    line-height: 0.5;
 }
 
 .underline {
@@ -1006,7 +1010,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
     }
     .copyright {
         padding: 1vw 1.825vw;
-        ;
     }
     .copyright ul {
         text-align: right;
