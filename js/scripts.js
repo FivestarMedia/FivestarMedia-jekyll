@@ -229,23 +229,55 @@ function main() {
 
 function initMap() {
 	var uluru = {
-		lat: 43.8398911,
-		lng: -79.5649135
+		lat: 43.6629213,
+		lng:-79.7277730
+	};
+	var uluruSecond = {
+		lat: 43.7596190,
+		lng:-79.4099279
 	};
 	var center_pos = {
-		lat: 43.8398911,
-		lng: -79.5509140
+		lat: 43.72,
+		lng:-79.55
 	};
 
+	var contentString = "<h4>Fivestar Media Brampton</h4><div class='mapBox'><img src='{{ site.baseurl }}/images/brampton.jpg'><p><span>2 County Court Blvd., Suite 400</span><span>Brampton, ON</span><span>L6W 3W8</span><span>Canada</span><span>+1-416-464-6573</span></p></div>";
+	var contentStringSecond = "<h4>Fivestar Media Toronto</h4><div class='mapBox'><img src='{{ site.baseurl }}/images/sheppard.jpg'><p><span>4711 Yonge Street, 10th Floor</span><span>Toronto, ON</span><span>M2N 6K8</span><span>Canada</span><span>+1-416-464-6573</span></p></div>";
+
 	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 15,
+		zoom: 10,
 		center: center_pos
 	});
+
+	var infowindow = new google.maps.InfoWindow({
+		content: contentString
+	  });
+
+	  var infowindowSecond = new google.maps.InfoWindow({
+		content: contentStringSecond
+	  });
+
 	var marker = new google.maps.Marker({
 		position: uluru,
-		map: map
+		map: map,
+		// title: 'Fivestar Media Brampton'
 	});
-}
+	var markerSecond = new google.maps.Marker({
+		position: uluruSecond,
+		map: map,
+		// title: 'Fivestar Media Toronto'
+	});
+
+	marker.addListener('click', function() {
+		infowindowSecond.close();
+		infowindow.open(map, marker);
+	});
+
+	  markerSecond.addListener('click', function() {
+		infowindow.close();
+		infowindowSecond.open(map, markerSecond);
+	  });
+	}
 
 $(document).ready(function () {
 	main();
