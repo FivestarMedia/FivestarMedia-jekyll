@@ -350,8 +350,14 @@ ul.blog h2 {
     font-weight: bold;
 }
 
+.serviceText.serviceSpace p{
+    padding-top: 1vw;
+    padding-bottom:1vw;
+}
+
 p.bold {
     line-height: 0.5;
+    // padding:1vw 0;
 }
 
 .underline {
@@ -920,6 +926,10 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 @media (min-width: 992px) {
+    .serviceText.serviceSpace p{
+        padding-top: 0;
+        padding-bottom:0;
+    }
 
     
     // .mapBox h3 {
