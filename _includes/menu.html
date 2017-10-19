@@ -1,11 +1,11 @@
 <div class="menu">
     <ul>
-        <li><a href="{{ site.baseurl }}/" class="hvr-underline-from-left">Home</a></li>
-        <li><a href="{{ site.baseurl }}/services" class="hvr-underline-from-left">Services</a>
+        <li><a href="{{ site.baseurl }}/" class="hvr-underline-from-left">Home</a>{% include telmenuphonebutton.html %}<img class="phone" src="{{ site.baseurl }}/images/phone.png"></a></li>
+        <li><a href="#" onclick="return false;" class="hvr-underline-from-none">Services</a>
             <ul>
                 <li><a href="{{ site.baseurl }}/website-design/" class="hvr-underline-from-left">Website Design</a></li>
                 <li><a href="{{ site.baseurl }}/search-engine-optimization-seo/" class="hvr-underline-from-left">SEO</a></li>
-                <li><a href="{{ site.baseurl }}/pay-per-click-marketing/" class="hvr-underline-from-left">PPC Marketing</a></li>
+                <li><a href="{{ site.baseurl }}/pay-per-click-ppc-marketing/" class="hvr-underline-from-left">PPC Marketing</a></li>
             </ul>
         </li>
         <!-- <li><a href="{{ site.baseurl }}/blog/" class="hvr-underline-from-left">Blog</a></li> -->
@@ -17,17 +17,17 @@
     <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/fivestarlogobefore.svg" class="logo"></a>
 <!-- </div> -->
     <ul>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="#" onclick="return false;">Services</a>
+        <li><a href="{{ site.baseurl }}/" class="hvr-underline-from-left">Home</a></li>
+        <li><a href="#" onclick="return false;" class="hvr-underline-from-none">Services</a>
             <ul>
-                <li><a href="{{ site.baseurl }}/website-design/">Website Design</a></li>
-                <li><a href="{{ site.baseurl }}/search-engine-optimization-seo/">SEO</a></li>
-                <li><a href="{{ site.baseurl }}/pay-per-click-ppc-marketing/">PPC Marketing</a></li>
+                <li><a href="{{ site.baseurl }}/website-design/" class="hvr-underline-from-left">Website Design</a></li>
+                <li><a href="{{ site.baseurl }}/search-engine-optimization-seo/" class="hvr-underline-from-left">SEO</a></li>
+                <li><a href="{{ site.baseurl }}/pay-per-click-ppc-marketing/" class="hvr-underline-from-left">PPC Marketing</a></li>
             </ul>
         </li>
         <!-- <li><a href="{{ site.baseurl }}/blog/" class="hvr-underline-from-left">Blog</a></li> -->
-        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
-        <li><a>(416) 464-6573</a></li>
+        <li><a href="{{ site.baseurl }}/contact/" class="hvr-underline-from-left">Contact</a></li>
+        <li><button>{% include telnumberbracketedlink.html %}</button></li>
         <li>
             <div class="icon-menu">
                 <div class="bar1"></div>
@@ -44,7 +44,7 @@
 <!-- </div> -->
     <ul>
         <li><a href="{{ site.baseurl }}/" class="hvr-underline-from-left">Home</a></li>
-        <li><a href="{{ site.baseurl }}/services/" class="hvr-underline-from-left">Services</a>
+        <li><a href="#" onclick="return false;" class="hvr-underline-from-none">Services</a>
             <ul>
                 <li><a href="{{ site.baseurl }}/website-design/" class="hvr-underline-from-left">Website Design</a></li>
                 <li><a href="{{ site.baseurl }}/search-engine-optimization-seo/" class="hvr-underline-from-left">SEO</a></li>
@@ -53,7 +53,7 @@
         </li>
         <!-- <li><a href="{{ site.baseurl }}/blog/" class="hvr-underline-from-left">Blog</a></li> -->
         <li><a href="{{ site.baseurl }}/contact/" class="hvr-underline-from-left">Contact</a></li>
-        <li><a class="telNumber">(416) 464-6573</a></li>
+        <li><button id="bottomScroll">{% include telnumberbracketedlink.html %}</li>
         <li>
             <div class="icon-menuBottom">
                 <div class="bar1"></div>
