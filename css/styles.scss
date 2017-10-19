@@ -156,6 +156,14 @@ h2.splash span {
     margin: 0;
 }
 
+.spacer {
+    padding-top:0.5vw;
+}
+
+.bigSpacer {
+    padding-top:2vw;
+}
+
 .greybg {
     background: #f5f5f5;
 }
@@ -334,6 +342,16 @@ ul.blog h2 {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 3.5vw;
+}
+
+.addressText {
+    font-size: 3.5vw;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.officeLocationHtAdjust {
+    padding-top:4vw;
 }
 
 .serviceText p {
@@ -874,33 +892,37 @@ padding:0.6vw 0;
 }
 
 .inputField {
-    width: 49%;
-    font-size: 2vw;
-    padding:0.1vw 0.5vw;
-    border:0.2vw solid lightgrey;
-    border-radius:0.5vw;
+    // width: 49%;
+    // width:100%;
+    font-size: 5vw;
+    padding:1vw 1vw;
+    border:0.5vw solid lightgrey;
+    border-radius:1vw;
     outline: none;
+    margin-top: 2.5vw;
 }
 
 .textBox {
     margin-top: 15px;
     width: 100%;
-    font-size: 2vw;
-    padding:0.1vw 0.5vw;
-    border:0.2vw solid lightgrey;
-    border-radius:0.5vw;
+    font-size: 5vw;
+    padding:1vw 1vw;
+    border:0.5vw solid lightgrey;
+    border-radius:1vw;
     outline: none;
 }
 
 input[type=submit] {
     background: inherit;
-    padding:0.1vw 0.5vw;
-    border:0.2vw solid $bluecolor;
-    border-radius:0.5vw;
+    padding:1vw 1vw;
+    border:0.5vw solid $bluecolor;
+    border-radius:1vw;
     // z-index: 500;
     -webkit-transition: background color 0.4s; /* Safari */
     transition: background color 0.4s;    
-    font-size:2vw;
+    font-size:5vw;
+    margin-top:2.5vw;
+    
 }
 
 input[type=submit]:hover {
@@ -1008,7 +1030,7 @@ button:hover {
 
 @media (min-width: 768px) {
     .phone {
-    width:80px;
+    width:70px;
         height:auto;
 }
 
@@ -1068,6 +1090,51 @@ button:hover {
 }
 
 @media (min-width: 992px) {
+
+    .officeLocationHtAdjust {
+        padding-top:0;
+    }
+
+    .addressText {
+        font-size: 1.5vw;
+        flex-direction: row;
+    }
+
+    input[type=submit] {
+        background: inherit;
+        padding:0.1vw 0.5vw;
+        border:0.2vw solid $bluecolor;
+        border-radius:0.5vw;
+        // z-index: 500;
+        -webkit-transition: background color 0.4s; /* Safari */
+        transition: background color 0.4s;    
+        font-size:2vw;
+        margin-top:0;
+    }
+
+    .inputField {
+        // width: 49%;
+        // width:100%;
+        font-size: 2vw;
+        padding:0.1vw 0.5vw;
+        border:0.2vw solid lightgrey;
+        border-radius:0.5vw;
+        outline: none;
+        margin-top:0;
+    }
+    
+    .textBox {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 2vw;
+        padding:0.1vw 0.5vw;
+        border:0.2vw solid lightgrey;
+        border-radius:0.5vw;
+        outline: none;
+    }
+
+
+
     .hvr-underline-from-left:before, .hvr-underline-from-none:before {
         height: 0.2vw;
     }

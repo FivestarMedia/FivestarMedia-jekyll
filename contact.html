@@ -15,27 +15,56 @@ permalink: /contact/
 		<div class="row eqHeight">
 			<div class="col-xs-12 col-md-6 featuresPadding">
 				<form id="contactform" method="POST">
-				<div class="nameEmail">
-					<input type="text" name="name" placeholder="Your name" class="inputField">
-					<input type="email" name="_replyto" placeholder="Your email" class="inputField">
+				<div class="row eqHeight">
+					<div class="col-xs-12 col-md-6">
+							<input type="text" name="name" placeholder="Your name" class="inputField">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<input type="email" name="_replyto" placeholder="Your email" class="inputField">
+					</div>
 				</div>
+				<div class="col-xs-12">
 					<input type="hidden" name="_subject" value="Fivestar Media Contact Page" />
 					<input type="hidden" name="_next" value="{{ site.baseurl }}/thank-you/" />
 					<textarea name="message" placeholder="Your message" class="textBox" rows="10"></textarea>
 					<input type="text" name="_gotcha" style="display:none" />
 					<input type="submit" value="Send">
+				</div>
 				</form>
-				{% include contactsend.html %}
+				<div class="col-xs-12">
+								{% include contactsend.html %}
+			</div>
 			</div>
 			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="serviceDetail">
-					<p class="toUpper bold serviceTextBox">Beautiful Websites</p>
-					<p class="serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
-						so make it the best. Your website is your company's first impression, so make it the best. Your website is your company's
-						first impression, so make it the best.</p>
-					<p class="serviceTextBox">Your website is your company's first impression, so make it the best. Your website is your company's first impression,
-						so make it the best. Your website is your company's first impression, so make it the best. Your website is your company's
-						first impression, so make it the best.</p>
+					<div class="row eqHeight spacer addressText">	
+					<div class="col-xs-12 col-md-6 eqHeight">
+					<p class="bold serviceTextBox officeLocationHtAdjust">Toronto Office</p>
+							<p>4711 Yonge Street, 10th Floor</p>
+							<p>Toronto, ON</p>
+							<p>M2N 6K8, Canada</p>
+							<p>{% include telnumbertextlong.html %}</p>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="footerImg">
+									<img src="{{ site.baseurl }}/images/sheppard.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="row eqHeight bigSpacer addressText">	
+							<div class="col-xs-12 col-md-6 eqHeight">
+									<p class="bold serviceTextBox officeLocationHtAdjust">Brampton Office</p>
+									<p>2 County Court Blvd., Suite 400</p>
+									<p>Brampton, ON</p>
+									<p>L6W 3W8, Canada</p>
+											<p>{% include telnumbertextlong.html %}</p>
+										</div>
+										<div class="col-xs-12 col-md-6">
+											<div class="footerImg">
+													<img src="{{ site.baseurl }}/images/brampton.jpg">
+												</div>
+											</div>
+										</div>	
 				</div>
 			</div>
 		</div>
