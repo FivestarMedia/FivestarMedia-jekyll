@@ -395,6 +395,13 @@ height:0;
     flex-direction: row;
 }
 
+.phone {
+    width:50px;
+    height:auto;
+    float:right;
+    padding:2vw;
+}
+
 {% comment %} ********** REMOVE GOOGLE MAPS FOOTER TEXT ********** {% endcomment %}
 a[href^="http://maps.google.com/maps"]{display:none !important}
 a[href^="https://maps.google.com/maps"]{display:none !important}
@@ -1000,6 +1007,10 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+    .phone {
+    width:80px;
+        height:auto;
+}
 
     h4 {
         font-size: 2.5vw;
@@ -1274,9 +1285,3 @@ button:hover {
     transform: translate3d(8px, -4px, 0) rotate(-45deg) scale(0.7, 1);
 }
 
-.phone {
-    width:50px;
-    height:auto;
-    float:right;
-    padding:2vw;
-}
