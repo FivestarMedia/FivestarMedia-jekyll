@@ -5,13 +5,33 @@ $bluecolor: #4286f4;
 $thankyoucolor: orange;
 
 body {
-    font-family: 'PT Sans', 'sans-serif';
+    font-family: 'PT Sans', sans-serif;
     position: relative;
     right: 0;
     margin: 0;
     color: #4F4D4F;
     background: ghostwhite;
 }
+
+/* pt-sans-regular - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'),
+         url($baseurl + '../fonts/pt-sans-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url($baseurl + '../fonts/pt-sans-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* pt-sans-700 - latin */
+  @font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+         url($baseurl + '../fonts/pt-sans-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url($baseurl + '../fonts/pt-sans-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 .bg {
     width: 100%;
@@ -1122,18 +1142,17 @@ button:hover {
     }
     .serviceCols {
         width: 30.9vw;
-        padding: 3.075vw 0vw;
+        padding: 3.075vw 0 3.075vw 1.825vw;
     }
     .serviceCols:last-child {
-        padding-bottom: 6.15vw;
+        padding: 3.075vw 1.825vw 3.075vw 0;
     }
     .footerCols {
         width: 22.71875vw;
         padding: 3.075vw 0 3.075vw 1.825vw;
     }
     .footerCols:last-child {
-        padding-bottom: 3.075vw;
-        padding-right:1.825vw;
+        padding: 3.075vw 1.825vw 3.075vw 0;
     }
     .footerImg {
         width: 100%;
