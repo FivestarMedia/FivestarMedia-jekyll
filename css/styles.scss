@@ -17,13 +17,12 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    min-height:350px;
+    min-height: 350px;
     height: 60vh;
 }
 
 .bg.home {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url($baseurl + "/images/mobile-home-background.jpg") no-repeat center;
-    // height: 120vh;
     min-height: 600px;
     background-size: cover;
 }
@@ -34,32 +33,27 @@ body {
 }
 
 .bg.seo {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url($baseurl + "/images/search-engine-optimization-background.jpg") no-repeat center;    
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url($baseurl + "/images/search-engine-optimization-background.jpg") no-repeat center;
     background-size: cover;
 }
 
 .bg.pay-per-click-marketing {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url($baseurl + "/images/pay-per-click-marketing-background.jpg") no-repeat center;    
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url($baseurl + "/images/pay-per-click-marketing-background.jpg") no-repeat center;
     background-size: cover;
 }
 
-.bg.contact-us, .bg.thank-you {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/contact-us-background.jpg") no-repeat center;    
+.bg.contact-us,
+.bg.thank-you {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/contact-us-background.jpg") no-repeat center;
     background-size: cover;
 }
-
-// .bg.blog {
-//     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
-//     background-size: cover;
-// }
 
 .Why {
-    background:#f0f0f0;
+    background: #f0f0f0;
 }
 
 .banner {
     background: $bluecolor;
-    // background: #a88e2d;
     text-align: center;
     color: white;
     padding: 4.5vw 1.825vw;
@@ -69,19 +63,23 @@ body {
     background: $thankyoucolor;
 }
 
+.eqHeight:before, .eqHeight:after {
+   content: normal;
+}
+
 .row.eqHeight.icons {
     text-align: center;
     padding: 3vw 1.825vw;
 }
 
 .row.eqHeight.icons.secondRow {
-    padding:0 1.825vw 3vw 1.825vw;
+    padding: 0 1.825vw 3vw 1.825vw;
 }
 
 .icons img {
-    margin:20px auto;
-    width:40px;
-    height:auto;
+    margin: 20px auto;
+    width: 40px;
+    height: auto;
 }
 
 .banner h2 a {
@@ -109,19 +107,18 @@ h3 {
 }
 
 h3 a {
-   color:inherit;
+    color: inherit;
     text-decoration: none;
 }
 
 h3 a:hover {
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
 
 h4 {
     font-size: 3.75vw;
-margin-top:0;
-    // line-height: 4vw;
+    margin-top: 0;
     color: #767376;
 }
 
@@ -157,11 +154,11 @@ h2.splash span {
 }
 
 .spacer {
-    padding-top:0.5vw;
+    padding-top: 0.5vw;
 }
 
 .bigSpacer {
-    padding-top:2vw;
+    padding-top: 2vw;
 }
 
 .greybg {
@@ -191,17 +188,15 @@ h2.splash span {
 
 .serviceTextBox {
     font-size: 3.2vw;
-    // color: #4F4D4F;
 }
 
 .serviceTextBoxHeading {
     font-size: 3.2vw;
-    // color: #4F4D4F;
 }
 
 .logo {
-    height:14vw;
-    width:auto;
+    height: 14vw;
+    width: auto;
 }
 
 .features ul {
@@ -346,12 +341,12 @@ ul.blog h2 {
 
 .addressText {
     font-size: 3.5vw;
-    display:flex;
+    display: flex;
     flex-direction: column-reverse;
 }
 
 .officeLocationHtAdjust {
-    padding-top:4vw;
+    padding-top: 4vw;
 }
 
 .serviceText p {
@@ -366,9 +361,9 @@ ul.blog h2 {
     font-weight: bold;
 }
 
-.serviceText.serviceSpace p{
+.serviceText.serviceSpace p {
     padding-top: 1vw;
-    padding-bottom:1vw;
+    padding-bottom: 1vw;
 }
 
 p.bold {
@@ -404,81 +399,81 @@ p.bold {
 }
 
 #map img {
-width:0;
-height:0;
+    width: 0;
+    height: 0;
 }
 
 .mapBox {
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
 .phone {
-    width:50px;
-    height:auto;
-    float:right;
-    padding:2vw;
+    width: 50px;
+    height: auto;
+    float: right;
+    padding: 2vw;
 }
 
 {% comment %} ********** REMOVE GOOGLE MAPS FOOTER TEXT ********** {% endcomment %}
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
 
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-    display:none;
+a[href^="http://maps.google.com/maps"] {
+    display: none !important
 }
+
+a[href^="https://maps.google.com/maps"] {
+    display: none !important
+}
+
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+    display: none;
+}
+
 .gmnoprint div {
-    background:none !important;
+    background: none !important;
 }
 
 {% comment %} ********** MENU ********** {% endcomment %}
 
 .oldNavWrapper {
-    position:fixed;
+    position: fixed;
     top: 0;
-    right:0;
-    z-index:1;
+    right: 0;
+    z-index: 1;
     width: 100%;
     height: 14vw;
-    // margin:0 1.825vw;
 }
 
 .oldNav {
-    // display:inline-block;
     cursor: default;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding:0 1.825vw;
-    z-index:1;
-    // height: 14vw;
+    padding: 0 1.825vw;
+    z-index: 1;
 }
 
 .oldNav ul {
     display: inline-block;
-    // font-weight: lighter;
     text-align: right;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 .oldNav ul li {
     font-size: 1.2vw;
     margin-left: 1.825vw;
     display: inline-block;
-    // color: white;
     position: relative;
-    // padding: 0.5vw 0;
-    // padding-top: 5px;
-    // padding: 0.5vw 0;
-    
 }
 
 .oldNav ul li a {
     color: white;
     text-decoration: none;
-padding:0.6vw 0;
+    padding: 0.6vw 0;
 }
 
 .oldNav ul li a:hover {
@@ -495,7 +490,6 @@ padding:0.6vw 0;
     width: 10vw;
     padding: 0;
     margin: 0;
-    // z-index: 5;
     border-radius: 0.2vw;
 }
 
@@ -506,7 +500,6 @@ padding:0.6vw 0;
 
 .oldNav ul li ul li {
     width: 100%;
-    // font-size: 1.6rem;
     margin-left: 0;
     border-bottom: 0.05vw solid lightgrey;
 }
@@ -526,83 +519,49 @@ padding:0.6vw 0;
 }
 
 .newNavWrapper {
-    position:fixed;
+    position: fixed;
     top: -14vw;
-    right:0;
-    z-index:99;
+    right: 0;
+    z-index: 99;
     width: 100%;
     height: 14vw;
-    // margin:0 1.825vw;
-    // display:inline-block;
 }
 
 .newNav {
     cursor: default;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding:0 1.825vw;
+    padding: 0 1.825vw;
     z-index: 99;
     height: 14vw;
     background-color: rgba(255, 255, 255, 0.95);
 }
 
 .newNav ul {
-    // font-weight: lighter;
-    // text-align: right;
-    // margin-right: 1.825vw;
-    // display: inline-block;
-    // position: absolute;
-    // right: 0;
-    // padding-top: 18px;
     display: inline-block;
-    // font-weight: lighter;
     text-align: right;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 .newNav ul li {
-    // margin-left: 1.825vw;
-    // display: inline-block;
-    // position: relative;
-    // font-size: 1.6rem;
     font-size: 1.2vw;
     margin-left: 1.825vw;
     display: inline-block;
-    // color: white;
     position: relative;
-    // padding-top: 5px;
-    color:grey;
-    // padding: 0.5vw 0;
+    color: grey;
 }
 
 .newNav ul li a {
-    color:grey;
-    // color: grey;
+    color: grey;
     text-decoration: none;
-    // padding-top: 5px;
-    // padding-bottom: 6px;
-
-    // color: white;
     text-decoration: none;
-    padding:0.6vw 0;
+    padding: 0.6vw 0;
 }
 
-
-
 .newNav ul li ul {
-    // display: none;
-    // position: absolute;
-    // top: 30px;
-    // left: -10px;
-    // background-color: white;
-    // width: 140px;
-    // padding: 0;
-    // margin: 0;
-    // z-index: 5;
-    // border-radius: 3px;
     display: none;
     position: absolute;
     top: 3vw;
@@ -611,7 +570,6 @@ padding:0.6vw 0;
     width: 10vw;
     padding: 0;
     margin: 0;
-    // z-index: 5;
     border-radius: 0.2vw;
 }
 
@@ -621,15 +579,9 @@ padding:0.6vw 0;
 }
 
 .newNav ul li ul li {
-    // width: 100%;
-    // font-size: 1.6rem;
-    // margin-left: 0px;
-    // border-bottom: 1px solid lightgrey;
     width: 100%;
-    // font-size: 1.6rem;
     margin-left: 0;
     border-bottom: 0.05vw solid lightgrey;
-
 }
 
 .newNav ul li ul li a {
@@ -641,11 +593,6 @@ padding:0.6vw 0;
 .newNav ul li ul li:last-child {
     border-bottom: none;
 }
-
-// .newNav img {
-//     margin-top: 5px;
-//     margin-left: 1.825vw;
-// }
 
 .slideNewNavDown {
     transition: transform 0.5s;
@@ -659,8 +606,6 @@ padding:0.6vw 0;
     transition-duration: 0.4s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
-    // margin-top:10px;
-    // padding-top:10px;
 }
 
 .hvr-underline-from-none:before {
@@ -670,8 +615,6 @@ padding:0.6vw 0;
     transition-duration: 0.4s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
-    // margin-top:10px;
-    // padding-top:10px;
 }
 
 .eqHeight {
@@ -697,7 +640,7 @@ padding:0.6vw 0;
 }
 
 .footerRow {
-    background-color:#e0e0e0;
+    background-color: #e0e0e0;
     color: #656666;
     text-align: center;
 }
@@ -732,22 +675,22 @@ padding:0.6vw 0;
 }
 
 .footerCols p a {
-    color:$bluecolor;
+    color: $bluecolor;
     text-decoration: none;
 }
 
 .footerCols p a:hover {
-    color:$bluecolor;
+    color: $bluecolor;
     text-decoration: none;
 }
 
-.footerCols p a i{
-    font-size:2.8vw;
+.footerCols p a i {
+    font-size: 2.8vw;
     color: grey;
     -webkit-transition: color 0.4s;
     /* Safari */
     transition: color 0.4s;
-    padding-right:1vw;
+    padding-right: 1vw;
 }
 
 .footerCols p a i:hover {
@@ -792,14 +735,8 @@ padding:0.6vw 0;
     font-size: 3.5vw;
 }
 
-// .footerCols p span:first-child {
-//     padding-top: 4.5vw;
-// }
-
 #map p span {
-    display:block;
-    // overflow:hidden;
-    // padding-left:1vw;
+    display: block;
 }
 
 .footerCols p span {
@@ -881,7 +818,7 @@ padding:0.6vw 0;
 .icon-menuBottom {
     display: inline-block;
     cursor: pointer;
-    padding-top:0.8vw;
+    padding-top: 0.8vw;
 }
 
 .nameEmail {
@@ -892,12 +829,10 @@ padding:0.6vw 0;
 }
 
 .inputField {
-    // width: 49%;
-    // width:100%;
     font-size: 5vw;
-    padding:1vw 1vw;
-    border:0.5vw solid lightgrey;
-    border-radius:1vw;
+    padding: 1vw 1vw;
+    border: 0.5vw solid lightgrey;
+    border-radius: 1vw;
     outline: none;
     margin-top: 2.5vw;
 }
@@ -906,92 +841,80 @@ padding:0.6vw 0;
     margin-top: 15px;
     width: 100%;
     font-size: 5vw;
-    padding:1vw 1vw;
-    border:0.5vw solid lightgrey;
-    border-radius:1vw;
+    padding: 1vw 1vw;
+    border: 0.5vw solid lightgrey;
+    border-radius: 1vw;
     outline: none;
 }
 
 input[type=submit] {
-    background: inherit;
-    padding:1vw 1vw;
-    border:0.5vw solid $bluecolor;
-    border-radius:1vw;
-    // z-index: 500;
-    -webkit-transition: background color 0.4s; /* Safari */
-    transition: background color 0.4s;    
-    font-size:5vw;
-    margin-top:2.5vw;
-    
+    background: white;
+    padding: 1vw 1vw;
+    border: 0.5vw solid $bluecolor;
+    border-radius: 1vw;
+    -webkit-transition: background color 0.4s;
+    /* Safari */
+    transition: background color 0.4s;
+    font-size: 5vw;
+    margin-top: 2.5vw;
 }
 
 input[type=submit]:hover {
-    background:$bluecolor;
-    color:white;
+    background: $bluecolor;
+    color: white;
 }
 
 input[type=submit] a {
-    color:inherit;
-    -webkit-transition: color 0.4s; /* Safari */
-    transition: color 0.4s;    
+    color: inherit;
+    -webkit-transition: color 0.4s;
+    /* Safari */
+    transition: color 0.4s;
 }
 
 input[type=submit] a:hover {
-    color:white;
+    color: white;
 }
 
-
-
-
-
 button {
-    // color: red;
     background: none;
-    padding:0.1vw 0.5vw;
-    border:0.2vw solid white;
-    border-radius:0.5vw;
-    -webkit-transition: background 0.4s; /* Safari */
+    padding: 0.1vw 0.5vw;
+    border: 0.2vw solid white;
+    border-radius: 0.5vw;
+    -webkit-transition: background 0.4s;
+    /* Safari */
     transition: background 0.4s;
-    outline:none;
+    outline: none;
 }
 
 button:hover {
-    background:$bluecolor;
-    // border:0.2vw solid $bluecolor;
+    background: $bluecolor;
 }
 
 #bottomScroll {
     background: inherit;
-    padding:0.1vw 0.5vw;
-    border:0.2vw solid $bluecolor;
-    border-radius:0.5vw;
-    // z-index: 500;
-    -webkit-transition: background color 0.4s; /* Safari */
-    transition: background color 0.4s;    
+    padding: 0.1vw 0.5vw;
+    border: 0.2vw solid $bluecolor;
+    border-radius: 0.5vw;
+    -webkit-transition: background color 0.4s;
+    /* Safari */
+    transition: background color 0.4s;
 }
 
 #bottomScroll:hover {
-    background:$bluecolor;
-    color:white;
-    // border:0.2vw solid $bluecolor;
+    background: $bluecolor;
+    color: white;
 }
 
 #bottomScroll a {
-    color:inherit;
-    -webkit-transition: color 0.4s; /* Safari */
-    transition: color 0.4s;    
+    color: inherit;
+    -webkit-transition: color 0.4s;
+    /* Safari */
+    transition: color 0.4s;
 }
 
 #bottomScroll a:hover {
-    color:white;
+    color: white;
 }
-
-// #bottomSplash {
-//     background: $bluecolor;
-//     padding:0.6vw;
-//     border:0.2vw solid white;
-//     border-radius:0.5vw;
-// }
 
 @media all {
     .oldNav>ul>li:last-child {
@@ -1009,11 +932,16 @@ button:hover {
 }
 
 @media (min-width: 576px) {
-    .logo, .oldNavWrapper, .oldNav, .newNavWrapper, .newNav {
-        height:8.1vw;
+    .logo,
+    .oldNavWrapper,
+    .oldNav,
+    .newNavWrapper,
+    .newNav {
+        height: 8.1vw;
     }
-    .newNavWrapper, .newNav {
-    top: -8.1vw;
+    .newNavWrapper,
+    .newNav {
+        top: -8.1vw;
     }
     .slideNewNavDown {
         transform: translateY(8.05vw);
@@ -1030,51 +958,44 @@ button:hover {
 
 @media (min-width: 768px) {
     .phone {
-    width:70px;
-        height:auto;
-}
-
+        width: 70px;
+        height: auto;
+    }
     h4 {
         font-size: 2.5vw;
     }
-
-.bg.home {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
-    height: 120vh;
-    background-size: cover;
-}
-
-.bg.website-design {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/website-design-background.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.bg.seo {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/search-engine-optimization-background.jpg") no-repeat center;    
-    background-size: cover;
-}
-
-.bg.pay-per-click-marketing {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/pay-per-click-marketing-background.jpg") no-repeat center;    
-    background-size: cover;
-}
-
-.bg.contact-us, .bg.thank-you {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/contact-us-background.jpg") no-repeat center;    
-    background-size: cover;
-}
-
-// .bg.blog {
-//     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
-//     background-size: cover;
-// }
-
-
-.logo, .oldNavWrapper, .oldNav, .newNavWrapper, .newNav {
-        height:7.5vw;
+    .bg.home {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
+        height: 120vh;
+        background-size: cover;
     }
-    .newNavWrapper, .newNav {
-    top: -7.5vw;
+    .bg.website-design {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/website-design-background.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .bg.seo {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/search-engine-optimization-background.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .bg.pay-per-click-marketing {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/pay-per-click-marketing-background.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .bg.contact-us,
+    .bg.thank-you {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/contact-us-background.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .logo,
+    .oldNavWrapper,
+    .oldNav,
+    .newNavWrapper,
+    .newNav {
+        height: 7.5vw;
+    }
+    .newNavWrapper,
+    .newNav {
+        top: -7.5vw;
     }
     .slideNewNavDown {
         transform: translateY(7.45vw);
@@ -1090,83 +1011,73 @@ button:hover {
 }
 
 @media (min-width: 992px) {
-
     .officeLocationHtAdjust {
-        padding-top:0;
+        padding-top: 0;
     }
-
     .addressText {
         font-size: 1.5vw;
         flex-direction: row;
     }
-
     input[type=submit] {
         background: inherit;
-        padding:0.1vw 0.5vw;
-        border:0.2vw solid $bluecolor;
-        border-radius:0.5vw;
-        // z-index: 500;
-        -webkit-transition: background color 0.4s; /* Safari */
-        transition: background color 0.4s;    
-        font-size:2vw;
-        margin-top:0;
-    }
-
-    .inputField {
-        // width: 49%;
-        // width:100%;
+        padding: 0.1vw 0.5vw;
+        border: 0.2vw solid $bluecolor;
+        border-radius: 0.5vw;
+        -webkit-transition: background color 0.4s;
+        /* Safari */
+        transition: background color 0.4s;
         font-size: 2vw;
-        padding:0.1vw 0.5vw;
-        border:0.2vw solid lightgrey;
-        border-radius:0.5vw;
-        outline: none;
-        margin-top:0;
+        margin-top: 0;
     }
-    
+    .inputField {
+        font-size: 2vw;
+        padding: 0.1vw 0.5vw;
+        border: 0.2vw solid lightgrey;
+        border-radius: 0.5vw;
+        outline: none;
+        margin-top: 0;
+    }
     .textBox {
         margin-top: 15px;
         width: 100%;
         font-size: 2vw;
-        padding:0.1vw 0.5vw;
-        border:0.2vw solid lightgrey;
-        border-radius:0.5vw;
+        padding: 0.1vw 0.5vw;
+        border: 0.2vw solid lightgrey;
+        border-radius: 0.5vw;
         outline: none;
     }
-
-
-
-    .hvr-underline-from-left:before, .hvr-underline-from-none:before {
+    .hvr-underline-from-left:before,
+    .hvr-underline-from-none:before {
         height: 0.2vw;
     }
     .eqHeight.reversible {
-            flex-direction: row-reverse;
-        }
-
+        flex-direction: row-reverse;
+    }
     .serviceDetail h3 {
         padding: 0.5vw;
-        padding-left:0;
+        padding-left: 0;
     }
-
-    .serviceText.serviceSpace p{
+    .serviceText.serviceSpace p {
         padding-top: 0;
-        padding-bottom:0;
+        padding-bottom: 0;
     }
-
     #map p span {
-        // display:block;
-        padding-left:1vw;
+        padding-left: 1vw;
     }
-
     #map img {
-        width:8vw;
-        height:6vw;
+        width: 8vw;
+        height: 6vw;
     }
-
-    .logo, .oldNavWrapper, .oldNav, .newNavWrapper, .newNav {
-        height:4.875vw;
+    .logo,
+    .oldNavWrapper,
+    .oldNav,
+    .newNavWrapper,
+    .newNav {
+        height: 4.875vw;
     }
-    .newNavWrapper, .newNav {
-    top: -4.875vw;
+    .newNavWrapper,
+    .newNav {
+        top: -4.875vw;
     }
     .slideNewNavDown {
         transform: translateY(4.87vw);
@@ -1331,6 +1242,7 @@ button:hover {
 @media (min-width: 1200px) {}
 
 {% comment %} ********** HAMBURGER ********** {% endcomment %}
+
 .bar1, .bar2, .bar3 {
     width: 28px;
     height: 4px;
@@ -1351,4 +1263,3 @@ button:hover {
 .change .bar3 {
     transform: translate3d(8px, -4px, 0) rotate(-45deg) scale(0.7, 1);
 }
-

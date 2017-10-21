@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Toronto Web Design Development SEO PPC Contact - Fivestar Media
+title: Toronto Web Design SEO PPC - Fivestar Media
 lang: en
 ref: contact
 permalink: /contact/
@@ -9,37 +9,39 @@ permalink: /contact/
 	{% include menu.html %}
 	<div class="jumbotron bg contact-us"></div>
 	<div class="banner">
-		<h2>Thank you for your interest in Fivestar Media. You may use the Contact Form below, call us at {% include telnumberlink.html %} or send us an email at {% include emaillink.html %} at your convenience.</h2>
+		<h2>Thank you for your interest in Fivestar Media. You may use the Contact Form below, call us at {% include telnumberlink.html
+			%} or send us an email at {% include emaillink.html %} at your convenience.</h2>
 	</div>
 	<div class="body-container">
 		<div class="row eqHeight">
 			<div class="col-xs-12 col-md-6 featuresPadding">
 				<form id="contactform" method="POST">
-				<div class="row eqHeight">
-					<div class="col-xs-12 col-md-6">
+					<div class="row eqHeight">
+						<div class="col-xs-12 col-md-6">
 							<input type="text" name="name" placeholder="Your name" class="inputField">
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<input type="email" name="_replyto" placeholder="Your email" class="inputField">
+						</div>
 					</div>
-					<div class="col-xs-12 col-md-6">
-						<input type="email" name="_replyto" placeholder="Your email" class="inputField">
+					<div class="col-xs-12">
+						<input type="hidden" name="_subject" value="Fivestar Media Contact Page" />
+						<input type="hidden" name="_next" value="{{ site.baseurl }}/thank-you/" />
+						<textarea name="message" placeholder="Your message" class="textBox" rows="10">
+						</textarea>
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="submit" value="Send">
 					</div>
-				</div>
-				<div class="col-xs-12">
-					<input type="hidden" name="_subject" value="Fivestar Media Contact Page" />
-					<input type="hidden" name="_next" value="{{ site.baseurl }}/thank-you/" />
-					<textarea name="message" placeholder="Your message" class="textBox" rows="10"></textarea>
-					<input type="text" name="_gotcha" style="display:none" />
-					<input type="submit" value="Send">
-				</div>
 				</form>
 				<div class="col-xs-12">
-								{% include contactsend.html %}
-			</div>
+					{% include contactsend.html %}
+				</div>
 			</div>
 			<div class="col-xs-12 col-md-6 featuresPadding">
 				<div class="serviceDetail">
-					<div class="row eqHeight spacer addressText">	
-					<div class="col-xs-12 col-md-6 eqHeight">
-					<p class="bold serviceTextBox officeLocationHtAdjust">Toronto Office</p>
+					<div class="row eqHeight spacer addressText">
+						<div class="col-xs-12 col-md-6 eqHeight">
+							<p class="bold serviceTextBox officeLocationHtAdjust">Toronto Office</p>
 							<p>4711 Yonge Street, 10th Floor</p>
 							<p>Toronto, ON</p>
 							<p>M2N 6K8, Canada</p>
@@ -47,28 +49,29 @@ permalink: /contact/
 						</div>
 						<div class="col-xs-12 col-md-6">
 							<div class="footerImg">
-									<img src="{{ site.baseurl }}/images/sheppard.jpg">
-								</div>
+								<img src="{{ site.baseurl }}/images/sheppard.jpg">
 							</div>
 						</div>
-						<div class="row eqHeight bigSpacer addressText">	
-							<div class="col-xs-12 col-md-6 eqHeight">
-									<p class="bold serviceTextBox officeLocationHtAdjust">Brampton Office</p>
-									<p>2 County Court Blvd., Suite 400</p>
-									<p>Brampton, ON</p>
-									<p>L6W 3W8, Canada</p>
-											<p>{% include telnumbertextlong.html %}</p>
-										</div>
-										<div class="col-xs-12 col-md-6">
-											<div class="footerImg">
-													<img src="{{ site.baseurl }}/images/brampton.jpg">
-												</div>
-											</div>
-										</div>	
+					</div>
+					<div class="row eqHeight bigSpacer addressText">
+						<div class="col-xs-12 col-md-6 eqHeight">
+							<p class="bold serviceTextBox officeLocationHtAdjust">Brampton Office</p>
+							<p>2 County Court Blvd., Suite 400</p>
+							<p>Brampton, ON</p>
+							<p>L6W 3W8, Canada</p>
+							<p>{% include telnumbertextlong.html %}</p>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="footerImg">
+								<img src="{{ site.baseurl }}/images/brampton.jpg">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	{% include footer.html %}
 </body>
+
 </html>
