@@ -1129,10 +1129,11 @@ button:hover {
     }
     .footerCols {
         width: 22.71875vw;
-        padding: 3.075vw 0vw;
+        padding: 3.075vw 0 3.075vw 1.825vw;
     }
     .footerCols:last-child {
         padding-bottom: 3.075vw;
+        padding-right:1.825vw;
     }
     .footerImg {
         width: 100%;
