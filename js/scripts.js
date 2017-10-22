@@ -17,8 +17,10 @@ function main() {
 					opacity: '1'
 				}, 400);
 				myFunction(thisObject);
+				document.getElementById('intercom-container').style.display = 'block';
 			}, 800);
 		} else {
+			document.getElementById('intercom-container').style.display = 'none';
 			$('body').css("background", "black");
 			var bgWidth = $(window).width();
 			$('body').css("max-width", bgWidth);
@@ -61,8 +63,10 @@ function main() {
 				$('.newNavWrapper img').attr("src", "{{ site.baseurl }}/images/fivestarlogo.svg");
 				$('.bar1, .bar2, .bar3').css("background-color", "black");
 				myFunction(thisObject);
+				document.getElementById('intercom-container').style.display = 'block';
 			}, 800);
 		} else {
+			document.getElementById('intercom-container').style.display = 'none';
 			$('body').css("background", "black");
 			$('.bar1, .bar2, .bar3').css("background-color", "white");
 			myFunction(this);
