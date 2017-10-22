@@ -151,7 +151,7 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		var wWidth = $(window).width();
 		$('body').css("max-width", wWidth);
-		$('body').css("background", "white");
+		// $('body').css("background", "white");
 	});
 	$(window).scroll(function () {
 		if ($(document).scrollTop() >= 100) {

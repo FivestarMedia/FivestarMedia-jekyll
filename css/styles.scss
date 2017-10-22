@@ -985,7 +985,7 @@ button:hover {
         font-size: 2.5vw;
     }
     .bg.home {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
         height: 120vh;
         background-size: cover;
     }
