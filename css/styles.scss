@@ -21,17 +21,17 @@ body {
     src: local('PT Sans'), local('PTSans-Regular'),
          url($baseurl + '../fonts/pt-sans-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url($baseurl + '../fonts/pt-sans-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+}
   
-  /* pt-sans-700 - latin */
-  @font-face {
+/* pt-sans-700 - latin */
+@font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     src: local('PT Sans Bold'), local('PTSans-Bold'),
          url($baseurl + '../fonts/pt-sans-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url($baseurl + '../fonts/pt-sans-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+}
 
 .bg {
     width: 100%;
@@ -42,7 +42,7 @@ body {
 }
 
 .bg.home {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url($baseurl + "/images/mobile-home-background.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.45)), url($baseurl + "/images/mobile-home-background.jpg") no-repeat center;
     min-height: 600px;
     background-size: cover;
 }
@@ -985,7 +985,7 @@ button:hover {
         font-size: 2.5vw;
     }
     .bg.home {
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url($baseurl + "/images/home-background.jpg") no-repeat center;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url($baseurl + "/images/home-background.jpg") no-repeat center;
         height: 120vh;
         background-size: cover;
     }
@@ -1242,7 +1242,7 @@ button:hover {
     .features ul {
         list-style: none;
         background-color: ghostwhite;
-        width: 20vw;
+        width: 22vw;
         padding: 0;
     }
     .features ul li {
