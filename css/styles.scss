@@ -179,7 +179,7 @@ h2.splash span {
 }
 
 .bigSpacer {
-    padding-top: 2vw;
+    padding-top: 6vw;
 }
 
 .greybg {
@@ -389,6 +389,10 @@ ul.blog h2 {
 
 p.bold {
     line-height: 0.5;
+}
+
+.footerCols p.bold {
+    line-height:2;
 }
 
 .underline {
@@ -660,6 +664,11 @@ a[href^="https://maps.google.com/maps"] {
     flex-direction: column;
 }
 
+.eqHeight p span {
+    line-height:2;
+    display:block;
+}
+
 .footerRow {
     background-color: #e0e0e0;
     color: #656666;
@@ -706,12 +715,12 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .footerCols p a i {
-    font-size: 2.8vw;
+    font-size: 9vw;
     color: grey;
     -webkit-transition: color 0.4s;
     /* Safari */
     transition: color 0.4s;
-    padding-right: 1vw;
+    padding-right: 3vw;
 }
 
 .footerCols p a i:hover {
@@ -753,7 +762,8 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .footerCols p {
-    font-size: 3.5vw;
+    font-size: 4vw;
+
 }
 
 #map p span {
@@ -1032,8 +1042,22 @@ button:hover {
 }
 
 @media (min-width: 992px) {
+    .footerCols p a i {
+        font-size: 2.8vw;
+        color: grey;
+        -webkit-transition: color 0.4s;
+        /* Safari */
+        transition: color 0.4s;
+        padding-right: 1vw;
+    }
+
+
+    .bigSpacer {
+        padding-top: 2vw;
+    }
+
     .officeLocationHtAdjust {
-        padding-top: 0;
+        padding-top: 0.25vw;
     }
     .addressText {
         font-size: 1.5vw;
