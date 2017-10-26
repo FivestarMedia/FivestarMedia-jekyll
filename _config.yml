@@ -1,4 +1,2 @@
 permalink: pretty
 baseurl: ""
-plugins:
-  - jekyll-sitemap
